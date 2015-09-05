@@ -20,13 +20,6 @@ font-weight: 700;
 }
 /////////////////new scroll
 /*
-== malihu jquery custom scrollbar plugin ==
-Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
-*/
-
-
-
-/*
 CONTENTS:
 	1. BASIC STYLE - Plugin's basic/essential CSS properties (normally, should not be edited).
 	2. VERTICAL SCROLLBAR - Positioning and dimensions of vertical scrollbar.
@@ -356,37 +349,15 @@ yx-axis
   */
 }
 
-.mCSB_scrollTools .mCSB_buttonLeft{
-  background-position: 0 -40px;
-  /*
-  sprites locations
-  light: 0 -40px, -20px -40px, -40px -40px, -60px -40px, 0 -112px, -20px -112px, -40px -112px
-  dark: -80px -40px, -100px -40px, -120px -40px, -140px -40px, -80px -112px, -100px -112px, -120px -112px
-  */
+.mCSB_scrollTools .mCSB_buttonLeft {  background-position: 0 -40px;  }
+.mCSB_scrollTools .mCSB_buttonRight{  background-position: 0 -56px; }
+
+a:hover, a:focus, a:visited {
+  text-decoration: none;
+  outline: none;
 }
-
-.mCSB_scrollTools .mCSB_buttonRight{
-  background-position: 0 -56px;
-  /*
-  sprites locations
-  light: 0 -56px, -20px -56px, -40px -56px, -60px -56px, 0 -128px, -20px -128px, -40px -128px
-  dark: -80px -56px, -100px -56px, -120px -56px, -140px -56px, -80px -128px, -100px -128px, -120px -128px
-  */
-}
-
-/* theme: "dark" */
-
-/* ---------------------------------------- */
-
-
-
-/* ---------------------------------------- */
-
 .row {
   font-family: "Museo Sans Curl", Arial;
-  a:hover {
-    text-decoration: none;
-  }
   &.header {
     height: 80px;
     line-height: 80px;
