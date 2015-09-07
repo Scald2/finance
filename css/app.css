@@ -1194,3 +1194,257 @@ body.RTL .row.common .col-xs-5 table td:last-of-type {
 body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   font-weight: 300;
 }
+.container-fluid.main {
+  font-family: "Museo Sans Curl", Arial;
+}
+.container-fluid.main .container {
+  padding: 0;
+  max-width: 1300px;
+}
+.container-fluid.main .flat {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 5px;
+}
+.container-fluid.main .flat.white {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-weight: 500;
+}
+.container-fluid.main h2.bordered {
+  font-size: 35px;
+  position: relative;
+  font-weight: 900;
+  margin: 0;
+  padding-bottom: 25px;
+}
+.container-fluid.main h2.bordered:after {
+  content: '';
+  width: 35px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.container-fluid.main h2.bordered.white:after {
+  background: #ffffff;
+}
+.container-fluid.main .row.header {
+  line-height: 103px;
+  height: 103px;
+  box-shadow: 0 3px 13px rgba(0, 0, 0, 0.2);
+}
+.container-fluid.main .row.header .center {
+  text-align: center;
+  padding-right: 20px;
+}
+.container-fluid.main .row.header .center a.logo {
+  float: left;
+}
+.container-fluid.main .row.header .center a.flat {
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 10px;
+  border-radius: 5px;
+  color: #000000;
+  font-weight: 500;
+}
+.container-fluid.main .row.header .center a.flat:hover,
+.container-fluid.main .row.header .center a.flat.active {
+  background-color: #F2F2F2;
+}
+.container-fluid.main .row.header .center a.flat.hasDrop:after {
+  content: '';
+  display: inline-block;
+  background: url(../images/main_arrow.png) no-repeat;
+  width: 11px;
+  height: 7px;
+  margin-left: 5px;
+}
+.container-fluid.main .row.header .center a.orange {
+  float: right;
+}
+.container-fluid.main .row.header .center a.orange span {
+  color: #FF8E00;
+  font-weight: 900;
+  border: 2px solid #FF8E00;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.container-fluid.main .row.header .center a.orange span:hover {
+  background: #FF8E00;
+  color: #ffffff;
+}
+.container-fluid.main .row.header .right {
+  padding: 33px 80px 0 0;
+  position: relative;
+}
+.container-fluid.main .row.header .right .blob {
+  float: right;
+}
+.container-fluid.main .row.header .right p {
+  line-height: 1em;
+  font-weight: 900;
+}
+.container-fluid.main .row.header .right p span {
+  font-weight: 500;
+}
+.container-fluid.main .row.header .right div.language {
+  position: absolute;
+  right: 15px;
+  padding: 5px;
+  background: #FFFFFF;
+  font-weight: 300;
+  z-index: 12;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  top: 16px;
+  max-width: 160px;
+}
+.container-fluid.main .row.header .right div.language .lang_current {
+  position: relative;
+}
+.container-fluid.main .row.header .right div.language:hover {
+  width: 100%;
+  border: 1px solid #DEDEDE;
+  right: 16px;
+}
+.container-fluid.main .row.header .right div.language:hover .lang_current:after {
+  right: 15px;
+  display: none;
+}
+.container-fluid.main .row.header .right div.language:hover a {
+  padding-right: 4px;
+}
+.container-fluid.main .row.header .right div.language:hover span {
+  display: inline-block;
+}
+.container-fluid.main .row.header .right div.language:hover .lang_hidden {
+  display: block;
+}
+.container-fluid.main .row.header .right div.language .lang_hidden {
+  display: none;
+}
+.container-fluid.main .row.header .right div.language a {
+  display: block;
+  text-align: right;
+  color: #B4B4B4;
+  line-height: 55px;
+  padding-right: 5px;
+}
+.container-fluid.main .row.header .right div.language a:hover {
+  background: #F2F2F2;
+}
+.container-fluid.main .row.header .right div.language a span {
+  display: none;
+  margin-right: 10px;
+}
+.container-fluid.main .row.drop-menu {
+  line-height: 78px;
+  position: relative;
+  text-align: center;
+}
+.container-fluid.main .row.drop-menu a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  color: #3B3B3B;
+  font-weight: 500;
+}
+.container-fluid.main .row.drop-menu a:hover {
+  font-weight: 900;
+}
+.container-fluid.main .row.drop-menu a.active {
+  font-weight: 900;
+  position: relative;
+}
+.container-fluid.main .row.drop-menu a.active:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #B4B4B4;
+  width: 2px;
+  height: 17px;
+}
+.container-fluid.main .row.drop-menu:before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -8px;
+  background: url(../images/drop_menu.png) no-repeat;
+  z-index: 12;
+}
+.container-fluid.main .row.drop-menu:after {
+  content: '';
+  display: inline;
+}
+.container-fluid.main .row.first_top .right-floated {
+  float: right;
+  background: #0099E6;
+  padding-left: 40px;
+  padding-right: 0;
+  height: 465px;
+}
+.container-fluid.main .row.first_top .right-floated h2 {
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+.container-fluid.main .row.first_top .right-floated .description {
+  font-weight: 300;
+  color: #ffffff;
+}
+.container-fluid.main .row.first_top .right-floated .flat,
+.container-fluid.main .row.first_top .right-floated .fill {
+  display: block;
+  max-width: 262px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  font-weight: 900;
+  text-align: center;
+  margin: 18px 0;
+}
+.container-fluid.main .row.first_top .right-floated .orange {
+  background: #FF8E00;
+  color: #ffffff;
+  font-weight: 900;
+  border-radius: 5px;
+}
+.container-fluid.main .row.first_top .left-floated {
+  padding: 0;
+  height: 465px;
+}
+.container-fluid.main .row.first_top .left-floated img {
+  height: 465px;
+  width: 100%;
+}
+.container-fluid.main .row.first_top .left-floated .carousel-caption {
+  top: 0;
+  padding-top: 0;
+  text-align: left;
+}
+.container-fluid.main .row.first_top .left-floated .carousel-caption h2 {
+  margin: 0 0 35px 0;
+  font-weight: 900;
+  text-shadow: none;
+}
+.container-fluid.main .row.first_top .left-floated .carousel-caption p {
+  font-weight: 300;
+  text-shadow: none;
+}
+.container-fluid.main .row.first_top .left-floated .carousel-caption .flat {
+  margin-top: 35px;
+  min-width: 165px;
+  text-align: center;
+  padding: 0;
+  height: 50px;
+  line-height: 50px;
+}
