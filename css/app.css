@@ -1448,3 +1448,14 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   height: 50px;
   line-height: 50px;
 }
+.container-fluid.main .row.first_top .left-floated .carousel-indicators li {
+  width: 14px;
+  height: 14px;
+}
+.container-fluid.main .row.first_top .left-floated .carousel-indicators li.active {
+  width: 14px;
+  height: 14px;
+  margin: 1px;
+  border-color: #0099E6;
+  background-color: #0099E6;
+}
