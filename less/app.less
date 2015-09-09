@@ -19,18 +19,6 @@ font-weight: 700;
   src: url(../font/MuseoSansCyrl_900.otf);
 }
 /////////////////new scroll
-/*
-CONTENTS:
-	1. BASIC STYLE - Plugin's basic/essential CSS properties (normally, should not be edited).
-	2. VERTICAL SCROLLBAR - Positioning and dimensions of vertical scrollbar.
-	3. HORIZONTAL SCROLLBAR - Positioning and dimensions of horizontal scrollbar.
-	4. VERTICAL AND HORIZONTAL SCROLLBARS - Positioning and dimensions of 2-axis scrollbars.
-	5. TRANSITIONS - CSS3 transitions for hover events, auto-expanded and auto-hidden scrollbars.
-	6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS
-		6.1 THEMES - Scrollbar colors, opacity, dimensions, backgrounds etc. via ready-to-use themes.
-*/
-
-
 
 /*
 ------------------------------------------------------------------------------------------------------------------------
@@ -1274,6 +1262,11 @@ body.RTL {
         background: #ffffff;
       }
     }
+    &.blue {
+      &:after {
+        background: #0099E6;
+      }
+    }
   }
   .row {
     &.header {
@@ -1506,12 +1499,279 @@ body.RTL {
               width: 14px;
               height: 14px;
               margin: 1px;
-              border-color: #0099E6;
+              border: 1px solid #0099E6;
               background-color: #0099E6;
             }
           }
         }
       }
+    }
+    &.first_bottom {
+      .video {
+        background: #0099E6;
+        height: 506px;
+        padding: 0;
+        h2 {
+          margin: 80px 0 0 0;
+          color: #fff;
+          text-align: center;
+          padding: 0;
+          &:after {
+            display: none;
+          }
+          span {
+            display: inline-block;
+            text-align: left;
+            position: relative;
+            padding-bottom: 35px;
+            &:after {
+              content: '';
+              width: 35px;
+              height: 2px;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              background: #FFFFFF;
+            }
+          }
+        }
+      }
+      .slider {
+        height: 506px;
+        padding: 0;
+        .carousel-indicators {
+          left: 5%;
+          margin-left: 0;
+          text-align: left;
+          li {
+            width: 14px;
+            height: 14px;
+            border: 2px solid #D1D1D1;
+            &.active {
+              width: 14px;
+              height: 14px;
+              margin: 1px;
+              border: 2px solid #0099E6;
+              background-color: #0099E6;
+            }
+          }
+        }
+        img {
+          height: 506px;
+        }
+        h2 {
+          color: #333333;
+          text-shadow: none;
+          margin-bottom: 35px;
+          margin-top: 80px;
+          &:after {
+            background: #0099E6;
+          }
+        }
+        .description {
+          font-weight: 300;
+          color: #838383;
+          text-shadow: none;
+          display: inline-block;
+          width: 370px;
+          font-size: 14px;
+        }
+        .carousel-caption {
+          top: 0;
+          padding-top: 0;
+          text-align: left;
+          left: 5%;
+
+        }
+        .flat {
+          display: inline-block;
+          color: #FF8E00;
+          text-shadow: none;
+          font-weight: 900;
+          font-size: 16px;
+          border: 2px solid;
+          padding: 10px 30px;
+          margin-top: 20px;
+        }
+      }
+    }
+    &.advantages {
+      padding: 60px 0 0 0;
+      .clearing {
+        display: block;
+        width: 100%;
+        clear: both;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 35px;
+        span {
+          font-weight: 300;
+        }
+        &:after {
+          right: 0;
+          margin: 0 auto;
+        }
+      }
+      .col-xs-3 {
+        text-align: center;
+        padding: 0 20px 60px 20px;
+        span {
+          display: block;
+          width: 100px;
+          height: 100px;
+          margin: 0 auto 30px auto;
+          background-image: url(../images/advantages_sprite.svg);
+          background-repeat: no-repeat ;
+          background-size: 765px 686px;
+        }
+        &.variety {
+          &:hover {
+            span.sprite {
+              background-position: 0 -160px;
+            }
+          }
+        }
+        &.trading {
+          span.sprite {
+            background-position: -220px -152px;
+          }
+          &:hover {
+            span.sprite {
+              background-position: -220px -1px;
+            }
+          }
+        }
+        &.leverage {
+          span.sprite {
+            background-position: -440px -152px;
+          }
+          &:hover {
+            span.sprite {
+              background-position: -440px 3px;
+            }
+          }
+        }
+        &.parallel {
+          span.sprite {
+            background-position: -664px -1px;
+          }
+          &:hover {
+            span.sprite {
+              background-position: -664px -156px;
+            }
+          }
+        }
+        &.support {
+           span.sprite {
+             background-position: 4px -371px;
+           }
+           &:hover {
+             span.sprite {
+               background-position: 4px -587px;
+             }
+           }
+         }
+        &.news {
+          span.sprite {
+            background-position: -223px -372px;
+          }
+          &:hover {
+            span.sprite {
+              background-position: -223px -588px;
+            }
+          }
+        }
+        &.expect {
+          span.sprite {
+            background-position: -451px -366px;
+          }
+          &:hover {
+            span.sprite {
+              background-position: -451px -587px;
+            }
+          }
+        }
+        &.rewards {
+          span.sprite {
+            background-position: -668px -366px;
+          }
+          &:hover {
+            span.sprite {
+              background-position: -668px -581px;
+            }
+          }
+        }
+        p {
+          font-size: 15px;
+          &.bold {
+            font-weight: 900;
+          }
+          &.normal {
+            font-weight: 300;
+            color: #B4B4B4;
+          }
+        }
+      }
+    }
+    &.tablet {
+      background: url(../images/tablet_back.png) repeat-x;
+      background-position: top left;
+      padding-top: 50px;
+      .image {
+        padding: 0 30px 0 0;
+        text-align: right;
+        img {
+          max-width: 100%;
+        }
+      }
+      .text {
+        padding: 0 0 0 30px;
+        h2 {
+          margin-bottom: 35px;
+        }
+        p {
+          font-weight: 300;
+          color: #838383;
+        }
+        .flat {
+          font-weight: 900;
+          color: #FF8E00;
+          font-size: 14px;
+          border: 2px solid;
+          padding: 14px 20px;
+          text-align: center;
+          background: #FFFFFF;
+          margin: 45px 5px 0 5px;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 960px) {
+  .advantages {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    .container {
+      .blob {
+        width: 2000px;
+        position: absolute;
+        top: 170px;
+        left: -374px;
+      }
+      .clearing {
+        display: none !important;
+        clear: none !important;
+      }
+      .col-xs-3 {
+        width: 12.5%;
+      }
+    }
+  }
+  .first_top {
+    .right-floated, .left-floated {
+      float: none !important;
     }
   }
 }
