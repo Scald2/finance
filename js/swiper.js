@@ -623,7 +623,7 @@
                     slideSize = (s.size - (s.params.slidesPerView - 1) * spaceBetween) / s.params.slidesPerView;
                     if (s.params.roundLengths) slideSize = round(slideSize);
 
-                    if(s.params.prevNextPreview) {
+                    if (s.params.prevNextPreview) {
                         slideSize -= slideSize / 2;
                     }
 
@@ -940,6 +940,10 @@
          Resize Handler
          ===========================*/
         s.onResize = function (forceUpdatePagination) {
+
+            if (!s) {
+                return;
+            }
             // Disable locks on resize
             var allowSwipeToPrev = s.params.allowSwipeToPrev;
             var allowSwipeToNext = s.params.allowSwipeToNext;
