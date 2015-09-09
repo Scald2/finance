@@ -1718,10 +1718,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     height: 400px;
   }
   .advantages .container .blob {
-    width: 2000px;
+    width: 100%;
     position: absolute;
     top: 170px;
-    left: -374px;
   }
   .advantages .container .clearing {
     display: none !important;
