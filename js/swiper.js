@@ -620,11 +620,11 @@
                     if (s.params.roundLengths) slideSize = round(slideSize);
                 }
                 else {
-                    slideSize = (s.size - (s.params.slidesPerView - 1) * spaceBetween) / s.params.slidesPerView;
+                    slideSize = (s.size - (s.params.slidesPerView - 1) * spaceBetween) / (s.params.slidesPerView ) ;
                     if (s.params.roundLengths) slideSize = round(slideSize);
 
                     if (s.params.prevNextPreview) {
-                        slideSize -= slideSize / 2;
+                        slideSize -= (slideSize / (s.params.slidesPerView + 1));
                     }
 
                     if (isH()) {
