@@ -29,4 +29,10 @@ $(document).ready(function(){
             updateOnContentResize: true
         }
     });
+    //hover for menu
+    $('.hasDrop_main').hover(function(){
+        $('#firstTop').addClass('padding')
+    }, function(){
+        $('#firstTop').removeClass('padding')
+    });
 });

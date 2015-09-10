@@ -26,10 +26,32 @@
                 <a href="#" class="logo">
                     <img src="images/logo.png" alt=""/>
                 </a>
-                <a href="#" class="flat hasDrop active">ACCOUNTS</a>
-                <a href="#" class="flat hasDrop">ABOUT US</a>
-                <a href="#" class="flat hasDrop">PARTNERSHIP</a>
-                <a href="#" class="flat hasDrop">NEWS</a>
+                <div class="hasDrop_main">
+                    <a href="#" class="flat hasDrop active">
+                        ACCOUNTS
+                    </a>
+                    <div class="dropDown">
+                        <a href="#" class="normal active">
+                            ACCOUNTS dropdown
+                        </a>
+                        <a href="#" class="normal">
+                            ACCOUNTS dropdown
+                        </a>
+                    </div>
+                </div>
+                <div class="hasDrop_main">
+                    <a href="#" class="flat hasDrop active">
+                      About Us
+                    </a>
+                    <div class="dropDown">
+                        <a href="#" class="normal active">
+                            ACCOUNTS dropdown
+                        </a>
+                        <a href="#" class="normal">
+                            ACCOUNTS dropdown
+                        </a>
+                    </div>
+                </div>
                 <a href="#" class="orange">
                     <span>sign up</span>
                 </a>
@@ -70,30 +92,7 @@
         </div>
     </div>
     <!--/ header -->
-    <div class="row drop-menu">
-        <div id="about">
-            <a href="#" class="normal active">
-                about us
-            </a>
-            <a href="#" class="normal">
-                COMPANY PROFILE
-            </a>
-            <a href="#" class="normal">
-                REGULATION
-            </a>
-            <a href="#" class="normal">
-                OUR ADVANTAGES
-            </a>
-            <a href="#" class="normal">
-                AWARDS
-            </a>
-            <a href="#" class="normal">
-                CAREERS
-            </a>
-        </div>
-    </div>
-    <!--/ main menu -->
-    <div class="row first_top">
+    <div class="row first_top" id="firstTop">
         <div class="col-md-4 right-floated">
             <h2 class="bordered white">
                 FOREX, CFDs
@@ -396,7 +395,7 @@
 
             <div class="col-xs-3">
                 <div class="blob">
-                    <img src="images/award.png" alt=""/>
+                    <img src="images/award.svg" alt=""/>
 
                     <p class="bold">BEST FOREX REWARDS</p>
 
@@ -410,7 +409,7 @@
             <!-- / col-xs-3 -->
             <div class="col-xs-3">
                 <div class="blob">
-                    <img src="images/award.png" alt=""/>
+                    <img src="images/award.svg" alt=""/>
 
                     <p class="bold">BEST FOREX REWARDS</p>
 
@@ -424,7 +423,7 @@
             <!-- / col-xs-3 -->
             <div class="col-xs-3">
                 <div class="blob">
-                    <img src="images/award.png" alt=""/>
+                    <img src="images/award.svg" alt=""/>
 
                     <p class="bold">BEST FOREX REWARDS</p>
 
@@ -438,8 +437,7 @@
             <!-- / col-xs-3 -->
             <div class="col-xs-3">
                 <div class="blob">
-                    <img src="images/award.png" alt=""/>
-
+                    <img src="images/award.svg" alt=""/>
                     <p class="bold">BEST FOREX REWARDS</p>
 
                     <p class="normal">
@@ -463,9 +461,11 @@
                     Silver Promotion to Welcome Traders into 2012
                 </p>
 
-                <p class="normal">
+                <p>
                     ICM Capital a leading FSA regulated
                     online trading company with headquarters
+                </p>
+                <p>
                     in London and an administration office in
                     Dubai will be launching a new promotion on the 1st February to welcome traders into 2012.
                 </p>
@@ -476,9 +476,11 @@
                     Silver Promotion to Welcome Traders into 2012
                 </p>
 
-                <p class="normal">
+                <p>
                     ICM Capital a leading FSA regulated
                     online trading company with headquarters
+                </p>
+                <p>
                     in London and an administration office in
                     Dubai will be launching a new promotion on the 1st February to welcome traders into 2012.
                 </p>
@@ -496,12 +498,16 @@
                         Receive major news updates including: Key Support & Resistance Levels, Market Summaries and
                         Charts
                     </p>
-                    <input class="normal-input" placeholder="First name"/>
-                    <input class="normal-input" placeholder="Last name"/>
-                    <input class="normal-input" placeholder="Mail"/>
-                    <input class="normal-input" placeholder="Country"/>
+                    <div class="col-xs-6">
+                        <input class="normal-input" placeholder="First name"/>
+                        <input class="normal-input" placeholder="Last name"/>
+                    </div>
+                    <div class="col-xs-6">
+                        <input class="normal-input" placeholder="Mail"/>
+                        <input class="normal-input" placeholder="Country"/>
+                    </div>
                     <input class="normal-input code" placeholder="423"/>
-                    <input class="normal-input phone" placeholder="423"/>
+                    <input class="normal-input phone" placeholder="Phone"/>
                     <input type="submit" value="subscribe" class="flat orange"/>
                 </form>
             </div>
@@ -522,11 +528,13 @@
                 </p>
             </div>
             <div class="col-md-6 mobile_hidden">
-                Make deposit
-                <a href="#" class="visa"></a>
-                <a href="#" class="master"></a>
-                <a href="#" class="american"></a>
-                <a href="#" class="skrill"></a>
+                <p class="bold">
+                    Make deposit
+                    <a href="#" class="visa"></a>
+                    <a href="#" class="master"></a>
+                    <a href="#" class="american"></a>
+                    <a href="#" class="skrill"></a>
+                </p>
             </div>
         </div>
     </div>
@@ -619,6 +627,8 @@
     <!-- / link footer -->
 </div>
 <!--/ container  fluid -->
+
+<div class="main_parallax"></div><!--/ main parallax -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/jquery.mCustomScrollbar.js"></script>
