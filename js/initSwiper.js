@@ -55,7 +55,7 @@
         window.onresize = function () {
             var slides = getSlidesPerView();
 
-            if (slides) {
+            if (slides >= 0) {
                 initOrUpdate(getSlidesPerView());
             }
             else {
