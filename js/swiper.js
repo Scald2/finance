@@ -620,7 +620,7 @@
                     if (s.params.roundLengths) slideSize = round(slideSize);
                 }
                 else {
-                    slideSize = (s.size - (s.params.slidesPerView - 1) * spaceBetween) / (s.params.slidesPerView ) ;
+                    slideSize = (s.size - (s.params.slidesPerView - 1) * spaceBetween) / (s.params.slidesPerView );
                     if (s.params.roundLengths) slideSize = round(slideSize);
 
                     if (s.params.prevNextPreview) {
@@ -642,6 +642,11 @@
                     if (i === 0) slidePosition = slidePosition - s.size / 2 - spaceBetween;
                     if (Math.abs(slidePosition) < 1 / 1000) slidePosition = 0;
                     if ((index) % s.params.slidesPerGroup === 0) s.snapGrid.push(slidePosition);
+
+                    if (s.params.prevNextPreview && s.params.slidesPerView > 1) {
+                        slidePosition += slideSize / 2;
+                    }
+
                     s.slidesGrid.push(slidePosition);
                 }
                 else {
