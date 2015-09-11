@@ -1470,9 +1470,12 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   padding: 0;
   height: 465px;
 }
-.container-fluid.main .row.first_top .left-floated img {
+.container-fluid.main .row.first_top .left-floated .item {
   height: 465px;
-  width: 100%;
+}
+.container-fluid.main .row.first_top .left-floated img {
+  min-height: 465px;
+  min-width: 100%;
 }
 .container-fluid.main .row.first_top .left-floated .carousel-caption {
   top: 0;
@@ -1559,8 +1562,12 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   border: 2px solid #0099E6;
   background-color: #0099E6;
 }
-.container-fluid.main .row.first_bottom .slider img {
+.container-fluid.main .row.first_bottom .slider .item {
   height: 506px;
+}
+.container-fluid.main .row.first_bottom .slider img {
+  min-height: 506px;
+  min-width: 100%;
 }
 .container-fluid.main .row.first_bottom .slider h2 {
   color: #333333;
@@ -1915,6 +1922,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.social p.bold {
   font-weight: 900;
   font-size: 25px;
+  line-height: 55px;
 }
 .container-fluid.main .row.social .social a {
   width: 34px;
@@ -1955,7 +1963,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   background-position: -291px -82px;
 }
 .container-fluid.main .row.link_footer {
-  background: #3B3B3B;
+  background: url(../images/footer_pattern.png);
   color: #FFFFFF;
   padding: 50px 0;
 }
@@ -1963,9 +1971,38 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   list-style-type: none;
   padding: 0;
   display: inline-block;
+  vertical-align: top;
+}
+.container-fluid.main .row.link_footer ul.drop-ul {
+  margin: 0 20px;
+}
+.container-fluid.main .row.link_footer ul a {
+  margin: 0;
+  font-weight: 300;
+  color: #838383;
+}
+.container-fluid.main .row.link_footer ul a.big {
+  font-weight: 900;
+  margin-bottom: 5px;
+  color: #FFFFFF;
 }
 .container-fluid.main .row.link_footer a {
   color: #fff;
+}
+.container-fluid.main .row.link_footer .col-xs-12.mobile_hidden {
+  padding-top: 40px;
+}
+.container-fluid.main .row.link_footer .col-xs-12.mobile_hidden a {
+  color: #838383;
+  padding: 0 5px;
+  border-right: 1px solid;
+}
+.container-fluid.main .row.link_footer .col-xs-12.mobile_hidden a:last-of-type {
+  border: none;
+}
+.container-fluid.main .row.link_footer .col-xs-12.mobile_hidden p.dark {
+  color: #F2F2F2;
+  font-size: 12px;
 }
 @media all and (max-width: 960px) {
   .advantages {
