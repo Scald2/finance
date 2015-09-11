@@ -1220,6 +1220,10 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   position: relative;
   z-index: 11;
 }
+.container-fluid.main .flat.white:hover {
+  background: #FF8E00;
+  border-color: #FF8E00;
+}
 .container-fluid.main .container {
   padding: 0;
   max-width: 1300px;
@@ -1274,8 +1278,11 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   height: 38px;
   line-height: 38px;
 }
-.container-fluid.main .row.header .center div.hasDrop_main:hover .dropDown {
+.container-fluid.main .row.header .center div.hasDrop_main.active .dropDown {
   display: block;
+}
+.container-fluid.main .row.header .center div.hasDrop_main.active .hasDrop {
+  background-color: #F2F2F2;
 }
 .container-fluid.main .row.header .center div.hasDrop_main .dropDown {
   box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
@@ -1439,7 +1446,24 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   float: right;
   padding-left: 40px;
   padding-right: 0;
-  height: 465px;
+  height: 540px;
+  padding-top: 82px;
+  position: relative;
+}
+.container-fluid.main .row.first_top .right-floated .orange_blob {
+  width: 49px;
+  text-align: center;
+  background: #FF8E00;
+  padding-top: 15px;
+  position: absolute;
+  right: 0;
+  top: 78px;
+  border-radius: 5px 0 0 5px;
+  z-index: 1;
+}
+.container-fluid.main .row.first_top .right-floated .orange_blob a {
+  display: inline-block;
+  margin-bottom: 15px;
 }
 .container-fluid.main .row.first_top .right-floated h2 {
   color: #ffffff;
@@ -1468,17 +1492,17 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 }
 .container-fluid.main .row.first_top .left-floated {
   padding: 0;
-  height: 465px;
+  height: 540px;
 }
 .container-fluid.main .row.first_top .left-floated .item {
-  height: 465px;
+  height: 540px;
 }
 .container-fluid.main .row.first_top .left-floated img {
-  min-height: 465px;
+  min-height: 540px;
   min-width: 100%;
 }
 .container-fluid.main .row.first_top .left-floated .carousel-caption {
-  top: 0;
+  top: 82px;
   padding-top: 0;
   text-align: left;
 }
@@ -1721,6 +1745,11 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   background: #FFFFFF;
   margin: 45px 5px 0 5px;
 }
+.container-fluid.main .row.tablet .text .flat:hover {
+  background: #FF8E00;
+  color: #FFFFFF;
+  border-color: #FF8E00;
+}
 .container-fluid.main .row.why {
   padding-top: 65px;
   padding-bottoM: 60px;
@@ -1796,6 +1825,13 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   color: #FFFFFF;
   font-weight: 500;
   font-size: 15px;
+  margin-bottom: 20px;
+}
+.container-fluid.main .row.tool .col-md-7 p img {
+  margin-right: 10px;
+}
+.container-fluid.main .row.tool .col-md-7 p img.annoying {
+  margin-left: 5px;
 }
 .container-fluid.main .row.tool .col-md-7 .flat {
   font-weight: 900;
@@ -1845,28 +1881,39 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.awards .col-xs-3 .blob img {
   float: left;
 }
+.container-fluid.main .row.news {
+  padding-top: 60px;
+}
 .container-fluid.main .row.news .container {
   padding: 0 15px 35px 15px;
 }
 .container-fluid.main .row.news h2 {
   margin-bottom: 35px;
 }
-.container-fluid.main .row.news .col-md-3.col-xs-12 {
+.container-fluid.main .row.news .col-md-6.blob {
   padding-left: 0;
 }
-.container-fluid.main .row.news .col-md-3 p {
+.container-fluid.main .row.news .col-md-6.blob > .col-md-6 {
+  padding-left: 0;
+  padding-right: 15px;
+}
+.container-fluid.main .row.news .col-md-6.blob p {
   font-size: 15px;
   font-weight: 300;
   line-height: 25px;
   color: #838383;
   margin: 0;
 }
-.container-fluid.main .row.news .col-md-3 p.blue {
+.container-fluid.main .row.news .col-md-6.blob p.blue {
   font-weight: 900;
   color: #0099E6;
 }
 .container-fluid.main .row.news .col-md-6 {
   padding-right: 0;
+}
+.container-fluid.main .row.news .col-md-6 .normal-input {
+  line-height: 50px;
+  height: 50px;
 }
 .container-fluid.main .row.news .col-md-6 form {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -1889,7 +1936,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   font-weight: 900;
   color: #FFFFFF;
   border: none;
-  padding: 8px 0 7px 0;
+  padding: 15px 0 15px 0;
   width: calc(24% - 20px);
 }
 .container-fluid.main .row.news .col-md-6 form .code {

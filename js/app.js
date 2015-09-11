@@ -29,10 +29,15 @@ $(document).ready(function(){
             updateOnContentResize: true
         }
     });
-    //hover for menu
-    $('.hasDrop_main').hover(function(){
-        $('#firstTop').addClass('padding')
-    }, function(){
-        $('#firstTop').removeClass('padding')
+    //click for menu
+    var $dropMain = $('.hasDrop_main');
+    $dropMain.click(function(){
+        if($(this).hasClass('active')) {
+            $(this).removeClass('active')
+        }
+        else {
+            $dropMain.removeClass('active');
+            $(this).addClass('active');
+        }
     });
 });

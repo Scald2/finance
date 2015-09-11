@@ -27,7 +27,7 @@
                     <img src="images/logo.png" alt=""/>
                 </a>
                 <div class="hasDrop_main">
-                    <a href="#" class="flat hasDrop active">
+                    <a href="#" class="flat hasDrop">
                         ACCOUNTS
                     </a>
                     <div class="dropDown">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="hasDrop_main">
-                    <a href="#" class="flat hasDrop active">
+                    <a href="#" class="flat hasDrop">
                       About Us
                     </a>
                     <div class="dropDown">
@@ -94,6 +94,17 @@
     <!--/ header -->
     <div class="row first_top" id="firstTop">
         <div class="col-md-4 right-floated">
+            <div class="orange_blob">
+                <a href="#">
+                    <img src="images/mail_main.svg" alt="" />
+                </a>
+                <a href="#">
+                    <img src="images/phone_main.svg" alt="" />
+                </a>
+                <a href="#">
+                    <img src="images/chat_main.svg" alt="" />
+                </a>
+            </div>
             <h2 class="bordered white">
                 FOREX, CFDs
                 <br/>
@@ -372,17 +383,17 @@
                 <h2 class="blue bordered">A tool for every trader</h2>
 
                 <p class="normal">
-                    <span class="economic"></span>
+                    <img src="images/econ.svg" alt="" />
                     Economic Calendar
                 </p>
 
                 <p class="normal">
-                    <span class="dash"></span>
+                    <img src="images/dash.svg" alt="" />
                     ICM Dashboard
                 </p>
 
                 <p class="normal">
-                    <span class="tools"></span>
+                    <img src="images/dash_1.svg" alt=""  class="annoying"/>
                     ICM Tools for Mobile
                 </p>
                 <a href="#" class="flat white">Fund your account</a>
@@ -455,39 +466,40 @@
     <!-- / awards -->
     <div class="row news">
         <div class="container">
-            <h2 class="blue bordered">Latest News</h2>
+            <div class="col-md-6 blob">
+                <h2 class="blue bordered">Latest News</h2>
+                <div class="col-md-6 col-xs-12">
+                    <p class="blue">
+                        ICM Capital to launch 500g
+                        Silver Promotion to Welcome Traders into 2012
+                    </p>
 
-            <div class="col-md-3 col-xs-12">
-                <p class="blue">
-                    ICM Capital to launch 500g
-                    Silver Promotion to Welcome Traders into 2012
-                </p>
+                    <p>
+                        ICM Capital a leading FSA regulated
+                        online trading company with headquarters
+                    </p>
+                    <p>
+                        in London and an administration office in
+                        Dubai will be launching a new promotion on the 1st February to welcome traders into 2012.
+                    </p>
+                </div>
+                <div class="col-md-6 mobile_hidden">
+                    <p class="blue">
+                        ICM Capital to launch 500g
+                        Silver Promotion to Welcome Traders into 2012
+                    </p>
 
-                <p>
-                    ICM Capital a leading FSA regulated
-                    online trading company with headquarters
-                </p>
-                <p>
-                    in London and an administration office in
-                    Dubai will be launching a new promotion on the 1st February to welcome traders into 2012.
-                </p>
+                    <p>
+                        ICM Capital a leading FSA regulated
+                        online trading company with headquarters
+                    </p>
+                    <p>
+                        in London and an administration office in
+                        Dubai will be launching a new promotion on the 1st February to welcome traders into 2012.
+                    </p>
+                </div>
+                <!-- / mobile hidden -->
             </div>
-            <div class="col-md-3 mobile_hidden">
-                <p class="blue">
-                    ICM Capital to launch 500g
-                    Silver Promotion to Welcome Traders into 2012
-                </p>
-
-                <p>
-                    ICM Capital a leading FSA regulated
-                    online trading company with headquarters
-                </p>
-                <p>
-                    in London and an administration office in
-                    Dubai will be launching a new promotion on the 1st February to welcome traders into 2012.
-                </p>
-            </div>
-            <!-- / mobile hidden -->
             <div class="col-md-6 col-xs-12 form">
                 <form action="#">
                     <p class="bold">
@@ -501,11 +513,11 @@
                         Charts
                     </p>
                     <div class="col-xs-6">
-                        <input class="normal-input" placeholder="First name"/>
-                        <input class="normal-input" placeholder="Last name"/>
+                        <input class="normal-input success" placeholder="First name" value="Пример успешного"/>
+                        <input class="normal-input alert" placeholder="Last name" value="Пример ошибки"/>
                     </div>
                     <div class="col-xs-6">
-                        <input class="normal-input" placeholder="Mail"/>
+                        <input class="normal-input" placeholder="Mail" value="disabled"  disabled/>
                         <input class="normal-input" placeholder="Country"/>
                     </div>
                     <input class="normal-input code" placeholder="423"/>
