@@ -40,6 +40,7 @@ $(document).ready(function(){
             $(this).addClass('active');
         }
     });
+    //parallax width
     $window = $(window);
     $window.scroll(function(){
         if($window.scrollTop() + $window.height() >= $('#wide_parallax').offset().top) {
@@ -48,5 +49,13 @@ $(document).ready(function(){
         else {
             $('#main_parallax').removeClass('wide');
         }
+    });
+    //carousel waiting
+    setInterval(function(){
+        var $rectWidth = parseInt($('#Rectangle').attr('width'), 10);
+        $('#Rectangle').attr('width', $rectWidth + 42.766667);
+    }, 100);
+    $('#HomeSlider').on('slid.bs.carousel', function (e) {
+        $('#Rectangle').attr('width', 0);
     });
 });

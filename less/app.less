@@ -35,14 +35,16 @@ font-weight: 700;
 @-webkit-keyframes orHover {
   //0%   {background: rgba(255,142,0,0.7); border-color:rgba(255,142,0,0.7) !important; }
   //100% {background: rgba(255,142,0,1); border-color: rgba(255,142,0,1)!important;}
-  0% {background: #FA9B24; border-color: #FA9B24;}
+  0% {background: #F9B45D; border-color: #F9B45D;}
   100% {background: rgba(255,142,0,1); border-color: rgba(255,142,0,1);}
 }
 
 /* Standard syntax */
 @keyframes orHover {
-  0%   {background: rgba(255,142,0,0.7); border-color:rgba(255,142,0,0.7) !important; }
-  100% {background: rgba(255,142,0,1); border-color: rgba(255,142,0,1)!important;}
+  //0%   {background: rgba(255,142,0,0.7); border-color:rgba(255,142,0,0.7) !important; }
+  //100% {background: rgba(255,142,0,1); border-color: rgba(255,142,0,1)!important;}
+  0% {background: #F9B45D; border-color: #F9B45D;}
+  100% {background: rgba(255,142,0,1); border-color: rgba(255,142,0,1);}
 }
 
 //end animation keyframes
@@ -1425,6 +1427,7 @@ body.RTL {
                 width: 11px;
                 height: 7px;
                 margin-left: 5px;
+                vertical-align: middle;
               }
             }
           }
@@ -1644,6 +1647,11 @@ body.RTL {
       .slider {
         height: 506px;
         padding: 0;
+        #svg_line {
+          position: absolute;
+          width: 100%;
+          bottom: -3px;
+        }
         .carousel-indicators {
           left: 5%;
           margin-left: 0;
