@@ -1441,6 +1441,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 }
 .container-fluid.main .row.first_top {
   background: none;
+  background: #FFFFFF;
 }
 .container-fluid.main .row.first_top .right-floated {
   float: right;
