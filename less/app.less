@@ -514,7 +514,6 @@ a:hover, a:focus, a:visited {
         }
       }
       .center {
-        padding-right: 0;
         float: right;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -1243,13 +1242,15 @@ body.RTL {
 //main paralax
 .main_parallax {
   position: fixed;
-  width: 100%;
+  width: 1300px;
   height: 100%;
   z-index: 10;
   background: url(../images/parallax_test.png) no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .container-fluid.main {
   font-family: "Museo Sans Curl", Arial;
@@ -2061,6 +2062,11 @@ body.RTL {
         font-weight: 900;
         font-size: 25px;
         line-height: 55px
+      }
+      .mobile_hidden {
+         p {
+           text-align: right;
+         }
       }
       .social {
         a {
