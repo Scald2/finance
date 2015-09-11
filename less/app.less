@@ -2071,6 +2071,12 @@ body.RTL {
             border: none;
             padding: 15px 0 15px 0;
             width: ~"calc(24% - 20px)";
+            &:hover {
+              -webkit-animation: orHover 0.6s infinite alternate ease-in-out;
+              -ms-animation: orHover 0.6s infinite alternate ease-in-out;
+              -moz-animation: orHover 0.6s infinite alternate ease-in-out;
+              animation: orHover 0.6s infinite alternate ease-in-out;
+            }
           }
           .code {
             width: ~"calc(24% - 20px)";

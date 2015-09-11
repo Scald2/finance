@@ -1992,6 +1992,12 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   padding: 15px 0 15px 0;
   width: calc(24% - 20px);
 }
+.container-fluid.main .row.news .col-md-6 form .flat:hover {
+  -webkit-animation: orHover 0.6s infinite alternate ease-in-out;
+  -ms-animation: orHover 0.6s infinite alternate ease-in-out;
+  -moz-animation: orHover 0.6s infinite alternate ease-in-out;
+  animation: orHover 0.6s infinite alternate ease-in-out;
+}
 .container-fluid.main .row.news .col-md-6 form .code {
   width: calc(24% - 20px);
   -webkit-box-sizing: border-box;
