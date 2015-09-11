@@ -40,4 +40,13 @@ $(document).ready(function(){
             $(this).addClass('active');
         }
     });
+    $window = $(window);
+    $window.scroll(function(){
+        if($window.scrollTop() + $window.height() >= $('#wide_parallax').offset().top) {
+            $('#main_parallax').addClass('wide');
+        }
+        else {
+            $('#main_parallax').removeClass('wide');
+        }
+    });
 });
