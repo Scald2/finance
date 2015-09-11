@@ -53,7 +53,7 @@ $(document).ready(function(){
     //carousel waiting
     setInterval(function(){
         var $rectWidth = parseInt($('#Rectangle').attr('width'), 10);
-        $('#Rectangle').attr('width', $rectWidth + 43);
+        $('#Rectangle').attr('width', $rectWidth + 43.6);
     }, 100);
     $('#carousel-top-2').on('slide.bs.carousel', function (e) {
         $('#Rectangle').attr('width', 0);
