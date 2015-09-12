@@ -1330,12 +1330,15 @@ body.RTL {
     &.header {
       line-height: 103px;
       height: 103px;
-      position: relative;
-      z-index: 11;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 17;
+      box-shadow: 0 3px 4px rgba(0,0,0,0.2);
       .center {
         text-align: center;
-        padding-right: 20px;
-        position: static;
+        position: relative;
+        padding: 0 52px 20px 15px;
         div {
           &.hasDrop_main {
             display: inline-block;
@@ -1350,7 +1353,7 @@ body.RTL {
               }
             }
             .dropDown {
-              box-shadow:inset 0 3px 4px rgba(0,0,0,0.2);
+              box-shadow:inset 0 3px 4px rgba(0,0,0,0.2), 0 3px 4px rgba(0,0,0,0.2);
               line-height: 78px;
               position: absolute;
               text-align: center;
@@ -1452,11 +1455,9 @@ body.RTL {
           }
         }
       }
-      .right {
-        padding: 33px 80px 0 0;
-        position: relative;
         .blob {
           float: right;
+          margin: 33px 0 0 30px;
         }
         p {
           line-height: 1em;
@@ -1467,7 +1468,7 @@ body.RTL {
         }
         div.language {
           position: absolute;
-          right: 15px;
+          right: 0px;
           padding: 5px;
           background: #FFFFFF;
           font-weight: 300;
@@ -1482,7 +1483,7 @@ body.RTL {
           &:hover {
             width: 100%;
             border: 1px solid #DEDEDE;
-            right: 16px;
+            right: 1px;
             .lang_current:after {
               right: 15px;
               display: none;
@@ -1515,11 +1516,11 @@ body.RTL {
             }
           }
         }
-      }
     }
     //header end
     &.first_top {
       background: none;
+      padding-top: 102px;
       .right-floated {
         float: right;
         padding-left: 40px;
@@ -1559,6 +1560,7 @@ body.RTL {
           font-weight: 900;
           text-align: center;
           margin: 18px 0;
+          text-shadow: none;
         }
         .orange {
           background: #FF8E00;

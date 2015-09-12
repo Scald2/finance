@@ -31,7 +31,7 @@ $(document).ready(function(){
     });
     //click for menu
     var $dropMain = $('.hasDrop_main');
-    $dropMain.click(function(){
+    $dropMain.click(function(e){
         if($(this).hasClass('active')) {
             $(this).removeClass('active')
         }
@@ -39,6 +39,7 @@ $(document).ready(function(){
             $dropMain.removeClass('active');
             $(this).addClass('active');
         }
+        return false;
     });
     //parallax width
     $window = $(window);
