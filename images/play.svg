@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 5 Copy 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M68.8976889,1174.98289 C88.0551406,1174.98289 103.585324,1159.4527 103.585324,1140.29525 C103.585324,1121.1378 88.0551406,1105.60762 68.8976889,1105.60762 C49.7402372,1105.60762 34.2100541,1121.1378 34.2100541,1140.29525 C34.2100541,1159.4527 49.7402372,1174.98289 68.8976889,1174.98289 Z M64.5504459,1154.09501 C61.6460099,1155.7001 59.2914993,1154.31628 59.2914993,1150.99242 L59.2914993,1129.50795 C59.2914993,1126.18935 61.6146775,1124.84409 64.4824503,1126.50438 L83.7071229,1137.63446 C86.5740061,1139.29423 86.5501487,1141.93728 83.6391274,1143.546 L64.5504459,1154.09501 Z" id="path-1"></path>
+    </defs>
+    <g id="Main-full-menu+hovers" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="iPhone-6-main" sketch:type="MSArtboardGroup" transform="translate(-34.000000, -1105.000000)">
+            <g id="Oval-5-Copy-4">
+                <use fill="#FFFFFF" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <use fill="none" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

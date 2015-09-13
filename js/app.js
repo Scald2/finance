@@ -69,4 +69,6 @@ $(document).ready(function(){
             return false
         });
     }
+    //to destroy
+    $('.carousel').carousel('pause');
 });

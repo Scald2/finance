@@ -1582,6 +1582,10 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   height: 506px;
   padding: 0;
 }
+.container-fluid.main .row.first_bottom .video .play {
+  padding: 40px 0 0 46px;
+  display: inline-block;
+}
 .container-fluid.main .row.first_bottom .video h2 {
   margin: 80px 0 0 0;
   color: #fff;
@@ -1634,10 +1638,14 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 }
 .container-fluid.main .row.first_bottom .slider .item {
   height: 506px;
+  background: #ffffff url(../images/slider_back.png) no-repeat;
+  background-size: cover;
+  width: 100%;
 }
-.container-fluid.main .row.first_bottom .slider img {
-  min-height: 506px;
-  min-width: 100%;
+.container-fluid.main .row.first_bottom .slider .blob {
+  text-align: right;
+  line-height: 506px;
+  padding-right: 40px;
 }
 .container-fluid.main .row.first_bottom .slider h2 {
   color: #333333;
@@ -1678,6 +1686,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   -moz-animation: orHover 0.6s infinite alternate ease-in-out;
   animation: orHover 0.6s infinite alternate ease-in-out;
   color: #FFFFFF;
+  background: #FF8E00;
 }
 .container-fluid.main .row.advantages {
   padding: 60px 0 0 0;
@@ -2122,6 +2131,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .mobile_menu {
   display: none;
 }
+.desktop_hidden {
+  display: none !important;
+}
 @media all and (max-width: 960px) {
   .mobile_menu {
     position: fixed;
@@ -2204,7 +2216,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     display: block;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 0 15px;
+    margin: 0 15px 20px 15px;
     text-align: center;
   }
   .mobile_hidden {
@@ -2226,10 +2238,6 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   }
   .container-fluid.main .advantages .container .col-xs-3 {
     width: 12.5%;
-  }
-  .container-fluid.main .first_top .right-floated,
-  .container-fluid.main .first_top .left-floated {
-    float: none !important;
   }
   .container-fluid.main .row.header {
     height: 64px;
@@ -2274,5 +2282,148 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     float: none;
     display: inline-block;
     font-size: 10px;
+  }
+  .container-fluid.main .row.first_top {
+    padding-top: 93px;
+  }
+  .container-fluid.main .row.first_top .right-floated {
+    float: none ;
+    padding: 0 30px 20px 30px;
+    height: inherit;
+  }
+  .container-fluid.main .row.first_top .right-floated .flat,
+  .container-fluid.main .row.first_top .right-floated .fill {
+    max-width: inherit;
+  }
+  .container-fluid.main .row.first_top .orange_blob {
+    display: none;
+  }
+  .container-fluid.main .row.first_top .left-floated {
+    float: none;
+    height: inherit;
+  }
+  .container-fluid.main .row.first_top .left-floated .item {
+    height: 370px;
+  }
+  .container-fluid.main .row.first_top .left-floated .item img {
+    min-height: 370px;
+  }
+  .container-fluid.main .row.first_top .left-floated .carousel-caption .flat {
+    margin-top: 10px;
+  }
+  .container-fluid.main .row.first_top .left-floated .carousel-indicators {
+    top: 10px;
+    bottom: inherit;
+    text-align: right;
+    right: 20px;
+    left: inherit;
+  }
+  .container-fluid.main .row.first_bottom .video {
+    height: inherit;
+  }
+  .container-fluid.main .row.first_bottom .video h2 {
+    text-align: left;
+    padding: 20px 0 0 40px !important;
+    margin: 0 !important;
+  }
+  .container-fluid.main .row.first_bottom .video h2 span {
+    padding-bottom: 20px;
+  }
+  .container-fluid.main .row.first_bottom .video .play {
+    padding: 20px 0 20px 40px;
+  }
+  .container-fluid.main .row.first_bottom .slider .carousel-inner {
+    padding-bottom: 20px;
+  }
+  .container-fluid.main .row.first_bottom .slider .carousel-indicators {
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    margin-left: -27%;
+    margin-bottom: 0;
+  }
+  .container-fluid.main .row.first_bottom .slider .item {
+    padding: 40px;
+    text-align: center;
+    background: #FFFFFF;
+  }
+  .container-fluid.main .row.first_bottom .slider .item .carousel-caption {
+    position: relative;
+    text-align: center;
+  }
+  .container-fluid.main .row.first_bottom .slider .item .carousel-caption h2:after {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .container-fluid.main .row.first_bottom .slider .item .blob {
+    line-height: inherit;
+    padding: 0 0 20px 0;
+    text-align: center;
+  }
+  .container-fluid.main .row.first_bottom .slider .item .blob img {
+    max-width: 100%;
+  }
+  .container-fluid.main .row.first_bottom .slider .item .description {
+    width: inherit;
+    margin: 0;
+  }
+  .container-fluid.main .row.tablet {
+    background-position: bottom left;
+  }
+  .container-fluid.main .row.tablet .image {
+    padding: 0 20px;
+    text-align: center;
+  }
+  .container-fluid.main .row.tablet .text {
+    padding: 20px;
+    text-align: center;
+  }
+  .container-fluid.main .row.tablet .text .flat {
+    margin: 10px 0 0 0;
+    width: 170px;
+  }
+  .container-fluid.main .row.tablet .text .flat.desktop_hidden {
+    display: inline-block !important;
+  }
+  .container-fluid.main .row.tablet .text h2 {
+    text-align: center;
+  }
+  .container-fluid.main .row.tablet .text h2:after {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .container-fluid.main .row.why {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .container-fluid.main .row.why h2.bordered:after {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .container-fluid.main .row.why .col-md-6 {
+    padding: 0;
+  }
+  .container-fluid.main .row.why .col-md-6 p.bold {
+    margin: 0;
+    font-size: 20px;
+  }
+  .container-fluid.main .row.tool {
+    background: none;
+  }
+  .container-fluid.main .row.tool .col-xs-12 {
+    padding: 40px 20px;
+  }
+  .container-fluid.main .row.tool .col-xs-12 .normal {
+    font-weight: 300;
+  }
+}
+@media all and (max-width: 374px) {
+  h2.bordered {
+    font-size: 25px !important;
+    margin: 0 0 20px !important;
+    padding: 0 0 20px 0 !important;
   }
 }
