@@ -2226,8 +2226,11 @@ body.RTL {
     }
   }
 }
+.mobile_menu {
+  display: none;
+}
 @media all and (max-width: 960px) {
-  .menu_opened {
+  .mobile_menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -2239,7 +2242,7 @@ body.RTL {
     &.active {
       display: block;
     }
-    .menu_closed {
+    .menu_close {
       display: inline-block;
       width: 64px;
       height: 63px;
@@ -2297,6 +2300,17 @@ body.RTL {
                 }
             }
           }
+        .flat {
+          line-height: 50px;
+          border-radius: 5px;
+          height: 50px;
+          background: #FF8E00;
+          display: block;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          margin: 0 15px;
+          text-align: center;
+        }
       }
     }
   }

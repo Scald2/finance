@@ -2119,8 +2119,11 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   color: #F2F2F2;
   font-size: 12px;
 }
+.mobile_menu {
+  display: none;
+}
 @media all and (max-width: 960px) {
-  .menu_opened {
+  .mobile_menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -2130,10 +2133,10 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     background: rgba(0, 0, 0, 0.7);
     display: none;
   }
-  .menu_opened.active {
+  .mobile_menu.active {
     display: block;
   }
-  .menu_opened .menu_closed {
+  .mobile_menu .menu_close {
     display: inline-block;
     width: 64px;
     height: 63px;
@@ -2142,7 +2145,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     background: #FFFFFF;
     float: left;
   }
-  .menu_opened .menu_closed + .blob {
+  .mobile_menu .menu_close + .blob {
     display: block;
     margin-left: 64px;
     background: #FFFFFF;
@@ -2153,7 +2156,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     height: 100%;
     overflow: auto;
   }
-  .menu_opened .menu_closed + .blob ul {
+  .mobile_menu .menu_close + .blob ul {
     padding: 0;
     list-style-type: none;
     font-weight: 500;
@@ -2161,37 +2164,48 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     color: #3B3B3B;
     margin: 0;
   }
-  .menu_opened .menu_closed + .blob ul li {
+  .mobile_menu .menu_close + .blob ul li {
     border-bottom: 1px solid #F3F3F3;
     margin: 0 15px;
     line-height: 63px;
   }
-  .menu_opened .menu_closed + .blob ul li a {
+  .mobile_menu .menu_close + .blob ul li a {
     color: inherit;
   }
-  .menu_opened .menu_closed + .blob ul li img {
+  .mobile_menu .menu_close + .blob ul li img {
     margin-right: 10px;
   }
-  .menu_opened .menu_closed + .blob ul .drop-ul {
+  .mobile_menu .menu_close + .blob ul .drop-ul {
     text-transform: uppercase;
     background: url(../images/minus.svg) no-repeat;
     background-position: 100% 20px;
   }
-  .menu_opened .menu_closed + .blob ul .drop-ul.active {
+  .mobile_menu .menu_close + .blob ul .drop-ul.active {
     background-position: 100% -29px;
   }
-  .menu_opened .menu_closed + .blob ul .drop-ul.active + .dropable {
+  .mobile_menu .menu_close + .blob ul .drop-ul.active + .dropable {
     display: block;
   }
-  .menu_opened .menu_closed + .blob ul .drop-ul + .dropable {
+  .mobile_menu .menu_close + .blob ul .drop-ul + .dropable {
     background: #F3F3F3;
     margin: 0;
     padding: 0 15px;
     display: none;
   }
-  .menu_opened .menu_closed + .blob ul .drop-ul + .dropable li {
+  .mobile_menu .menu_close + .blob ul .drop-ul + .dropable li {
     margin: 0;
     text-transform: uppercase;
+  }
+  .mobile_menu .menu_close + .blob .flat {
+    line-height: 50px;
+    border-radius: 5px;
+    height: 50px;
+    background: #FF8E00;
+    display: block;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 15px;
+    text-align: center;
   }
   .mobile_hidden {
     display: none !important;
