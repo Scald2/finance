@@ -5,12 +5,7 @@ $(document).ready(function(){
     //drop ul
     $('.drop-ul').click(function(e){
             $(this).toggleClass('active');
-            //update scroll for hiden divs
-            if($(this).hasClass('hasScroll')) {
-                $("#scroll-button").customScrollbar({
-                    preventDefaultScroll: true
-                });
-        }
+        return false
     });
     //menu click
     $('.nav-button').click(function(){
@@ -43,20 +38,35 @@ $(document).ready(function(){
     });
     //parallax width
     $window = $(window);
-    $window.scroll(function(){
-        if($window.scrollTop() + $window.height() >= $('#wide_parallax').offset().top) {
-            $('#main_parallax').addClass('wide');
-        }
-        else {
-            $('#main_parallax').removeClass('wide');
-        }
-    });
+    if($('#wide_parallax').length) {
+        $window.scroll(function(){
+            if($window.scrollTop() + $window.height() >= $('#wide_parallax').offset().top) {
+                $('#main_parallax').addClass('wide');
+            }
+            else {
+                $('#main_parallax').removeClass('wide');
+            }
+        });
+    }
     //carousel waiting
-    setInterval(function(){
-        var $rectWidth = parseInt($('#Rectangle').attr('width'), 10);
-        $('#Rectangle').attr('width', $rectWidth + 43.6);
-    }, 100);
-    $('#carousel-top-2').on('slide.bs.carousel', function (e) {
-        $('#Rectangle').attr('width', 0);
-    });
+    if($('#Rectangle').length) {
+        setInterval(function(){
+            var $rectWidth = parseInt($('#Rectangle').attr('width'), 10);
+            $('#Rectangle').attr('width', $rectWidth + 43.6);
+        }, 100);
+        $('#carousel-top-2').on('slide.bs.carousel', function (e) {
+            $('#Rectangle').attr('width', 0);
+        });
+    }
+    //mobil menu {}
+    if($('#mobile_menu').length) {
+        $('#mobile_open').click(function(){
+           $('#mobile_menu').addClass('active');
+            return false
+        });
+        $('#menu_close').click(function(){
+            $('#mobile_menu').removeClass('active');
+            return false
+        });
+    }
 });

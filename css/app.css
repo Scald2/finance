@@ -23,9 +23,6 @@
     height: 0;
     color: transparent;
   }
-  90% {
-    color: transparent;
-  }
   100% {
     height: 78px;
     color: #3B3B3B;
@@ -35,33 +32,28 @@
 @keyframes dropMain {
   0% {
     height: 0;
-  }
-  90% {
     color: transparent;
   }
   100% {
     height: 78px;
+    color: #3B3B3B;
   }
 }
 @-webkit-keyframes orHover {
   0% {
-    background: #F9B45D;
-    border-color: #F9B45D;
+    opacity: 1;
   }
   100% {
-    background: #ff8e00;
-    border-color: #ff8e00;
+    opacity: 0.7;
   }
 }
 /* Standard syntax */
 @keyframes orHover {
   0% {
-    background: #F9B45D;
-    border-color: #F9B45D;
+    opacity: 1;
   }
   100% {
-    background: #ff8e00;
-    border-color: #ff8e00;
+    opacity: 0.7;
   }
 }
 /*
@@ -1303,10 +1295,16 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   z-index: 17;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
 }
+.container-fluid.main .row.header .desktop_menu {
+  display: inline-block;
+}
 .container-fluid.main .row.header .center {
   text-align: center;
-  position: relative;
-  padding: 0 52px 20px 15px;
+  position: static;
+  padding: 0 0 20px 15px;
+}
+.container-fluid.main .row.header .center .menu_mobile {
+  display: none;
 }
 .container-fluid.main .row.header .center div.hasDrop_main {
   display: inline-block;
@@ -1418,24 +1416,27 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.header .blob {
   float: right;
   margin: 33px 0 0 30px;
+  position: relative;
+  padding-right: 52px;
 }
 .container-fluid.main .row.header p {
   line-height: 1em;
   font-weight: 900;
+  margin: 0 0 10px 0;
 }
 .container-fluid.main .row.header p span {
   font-weight: 500;
 }
 .container-fluid.main .row.header div.language {
   position: absolute;
-  right: 0px;
+  right: 0;
   padding: 5px;
   background: #FFFFFF;
   font-weight: 300;
   z-index: 12;
   border-radius: 5px;
   border: 1px solid transparent;
-  top: 16px;
+  top: -17px;
   max-width: 160px;
 }
 .container-fluid.main .row.header div.language .lang_current {
@@ -1561,6 +1562,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   padding: 0;
   height: 50px;
   line-height: 50px;
+  text-shadow: none;
 }
 .container-fluid.main .row.first_top .left-floated .carousel-indicators li {
   width: 14px;
@@ -2118,25 +2120,145 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   font-size: 12px;
 }
 @media all and (max-width: 960px) {
-  .advantages {
+  .menu_opened {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 18;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+  }
+  .menu_opened.active {
+    display: block;
+  }
+  .menu_opened .menu_closed {
+    display: inline-block;
+    width: 64px;
+    height: 63px;
+    line-height: 63px;
+    text-align: center;
+    background: #FFFFFF;
+    float: left;
+  }
+  .menu_opened .menu_closed + .blob {
+    display: block;
+    margin-left: 64px;
+    background: #FFFFFF;
+    width: -webkit-calc(100% - 64px);
+    width: -ms-calc(100% - 64px);
+    width: -moz-calc(100% - 64px);
+    width: calc(100% - 64px);
+    height: 100%;
+    overflow: auto;
+  }
+  .menu_opened .menu_closed + .blob ul {
+    padding: 0;
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: #3B3B3B;
+    margin: 0;
+  }
+  .menu_opened .menu_closed + .blob ul li {
+    border-bottom: 1px solid #F3F3F3;
+    margin: 0 15px;
+    line-height: 63px;
+  }
+  .menu_opened .menu_closed + .blob ul li a {
+    color: inherit;
+  }
+  .menu_opened .menu_closed + .blob ul li img {
+    margin-right: 10px;
+  }
+  .menu_opened .menu_closed + .blob ul .drop-ul {
+    text-transform: uppercase;
+    background: url(../images/minus.svg) no-repeat;
+    background-position: 100% 20px;
+  }
+  .menu_opened .menu_closed + .blob ul .drop-ul.active {
+    background-position: 100% -29px;
+  }
+  .menu_opened .menu_closed + .blob ul .drop-ul.active + .dropable {
+    display: block;
+  }
+  .menu_opened .menu_closed + .blob ul .drop-ul + .dropable {
+    background: #F3F3F3;
+    margin: 0;
+    padding: 0 15px;
+    display: none;
+  }
+  .menu_opened .menu_closed + .blob ul .drop-ul + .dropable li {
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .mobile_hidden {
+    display: none !important;
+  }
+  .container-fluid.main .advantages {
     position: relative;
     overflow: hidden;
     height: 400px;
   }
-  .advantages .container .blob {
+  .container-fluid.main .advantages .container .blob {
     width: 100%;
     position: absolute;
     top: 170px;
   }
-  .advantages .container .clearing {
+  .container-fluid.main .advantages .container .clearing {
     display: none !important;
     clear: none !important;
   }
-  .advantages .container .col-xs-3 {
+  .container-fluid.main .advantages .container .col-xs-3 {
     width: 12.5%;
   }
-  .first_top .right-floated,
-  .first_top .left-floated {
+  .container-fluid.main .first_top .right-floated,
+  .container-fluid.main .first_top .left-floated {
     float: none !important;
+  }
+  .container-fluid.main .row.header {
+    height: 64px;
+    line-height: 64px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+  .container-fluid.main .row.header .col-md-12 {
+    padding: 0;
+  }
+  .container-fluid.main .row.header .col-md-12:after {
+    content: '';
+    width: 100%;
+    display: block;
+    clear: both;
+  }
+  .container-fluid.main .row.header .col-md-12 .menu_mobile {
+    display: inline-block;
+    float: right;
+    padding: 0 0 0 15px;
+    border-left: 1px solid #D1D1D1;
+  }
+  .container-fluid.main .row.header .language {
+    display: none;
+  }
+  .container-fluid.main .row.header .hasDrop_main,
+  .container-fluid.main .row.header .flat,
+  .container-fluid.main .row.header .orange {
+    display: none !important;
+  }
+  .container-fluid.main .row.header a.logo {
+    max-width: 109px;
+  }
+  .container-fluid.main .row.header a.logo img {
+    max-width: 100%;
+  }
+  .container-fluid.main .row.header .blob {
+    margin: 0;
+    padding: 15px 0 0 0;
+    float: none;
+    display: inline-block;
+    font-size: 10px;
   }
 }
