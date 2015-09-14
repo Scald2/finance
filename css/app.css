@@ -1488,7 +1488,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   left: 0;
   right: 0;
   margin: 0 auto;
-  z-index: 99;
+  z-index: 12;
 }
 .container-fluid.main .row.first_top .right-floated {
   float: right;
