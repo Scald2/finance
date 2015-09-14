@@ -1547,6 +1547,10 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   top: 82px;
   padding-top: 0;
   text-align: left;
+  right: 0;
+  width: 100%;
+  max-width: 806px;
+  left: auto;
 }
 .container-fluid.main .row.first_top .left-floated .carousel-caption h2 {
   margin: 0 0 35px 0;
