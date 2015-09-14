@@ -1490,6 +1490,12 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   margin: 0 auto;
   z-index: 12;
 }
+.container-fluid.main .row.first_top .container .right-floated {
+  width: 38%;
+}
+.container-fluid.main .row.first_top .container .left-floated {
+  width: 62%;
+}
 .container-fluid.main .row.first_top .right-floated {
   float: right;
   padding-right: 0;
