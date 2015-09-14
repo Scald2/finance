@@ -1977,30 +1977,31 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   font-weight: 900;
   color: #0099E6;
 }
-.container-fluid.main .row.news .col-md-6 {
+.container-fluid.main .row.news .col-md-6.form {
   padding-right: 0;
 }
-.container-fluid.main .row.news .col-md-6 .normal-input {
+.container-fluid.main .row.news .col-md-6.form .normal-input {
   line-height: 50px;
   height: 50px;
+  width: 100%;
 }
-.container-fluid.main .row.news .col-md-6 form {
+.container-fluid.main .row.news .col-md-6.form form {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   padding: 30px;
 }
-.container-fluid.main .row.news .col-md-6 form p.bold {
+.container-fluid.main .row.news .col-md-6.form form p.bold {
   font-weight: 900;
   font-size: 25px;
   line-height: 46px;
   margin: 0;
 }
-.container-fluid.main .row.news .col-md-6 form p.normal {
+.container-fluid.main .row.news .col-md-6.form form p.normal {
   font-weight: 300;
   color: #838383;
   line-height: 25px;
 }
-.container-fluid.main .row.news .col-md-6 form .flat {
+.container-fluid.main .row.news .col-md-6.form form .flat {
   background: #FF8E00;
   font-weight: 900;
   color: #FFFFFF;
@@ -2008,34 +2009,34 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   padding: 15px 0 15px 0;
   width: calc(24% - 20px);
 }
-.container-fluid.main .row.news .col-md-6 form .flat:hover {
+.container-fluid.main .row.news .col-md-6.form form .flat:hover {
   -webkit-animation: orHover 0.6s infinite alternate ease-in-out;
   -ms-animation: orHover 0.6s infinite alternate ease-in-out;
   -moz-animation: orHover 0.6s infinite alternate ease-in-out;
   animation: orHover 0.6s infinite alternate ease-in-out;
 }
-.container-fluid.main .row.news .col-md-6 form .code {
+.container-fluid.main .row.news .col-md-6.form form .code {
   width: calc(24% - 20px);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin-right: 30px;
 }
-.container-fluid.main .row.news .col-md-6 form .phone {
+.container-fluid.main .row.news .col-md-6.form form .phone {
   width: calc(48% - 20px);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin-right: 30px;
 }
-.container-fluid.main .row.news .col-md-6 form .col-xs-6 .normal-input {
+.container-fluid.main .row.news .col-md-6.form form .col-md-6 .normal-input {
   width: 100%;
   margin-bottom: 25px;
 }
-.container-fluid.main .row.news .col-md-6 form .col-xs-6:first-of-type {
+.container-fluid.main .row.news .col-md-6.form form .col-md-6:first-of-type {
   padding: 0 15px 0 0 ;
 }
-.container-fluid.main .row.news .col-md-6 form .col-xs-6:last-of-type {
+.container-fluid.main .row.news .col-md-6.form form .col-md-6:last-of-type {
   padding: 0 0 0 15px;
 }
 .container-fluid.main .row.social {
