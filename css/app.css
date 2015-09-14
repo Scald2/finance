@@ -1549,8 +1549,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   text-align: left;
   right: 0;
   width: 100%;
-  max-width: 806px;
+  max-width: 900px;
   left: auto;
+  padding-left: 20px;
 }
 .container-fluid.main .row.first_top .left-floated .carousel-caption h2 {
   margin: 0 0 35px 0;
