@@ -1480,15 +1480,26 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.first_top {
   background: none;
   padding-top: 102px;
+  position: relative;
+}
+.container-fluid.main .row.first_top .container {
+  position: absolute;
+  top: 102px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 99;
 }
 .container-fluid.main .row.first_top .right-floated {
   float: right;
-  padding-left: 40px;
   padding-right: 0;
   height: 540px;
   padding-top: 82px;
   position: relative;
   width: 38%;
+}
+.container-fluid.main .row.first_top .right-floated .blob {
+  float: right;
 }
 .container-fluid.main .row.first_top .right-floated .orange_blob {
   width: 49px;

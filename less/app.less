@@ -1537,14 +1537,25 @@ body.RTL {
     &.first_top {
       background: none;
       padding-top: 102px;
+      position: relative;
+      .container {
+        position: absolute;
+        top: 102px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 99;
+      }
       .right-floated {
         float: right;
-        padding-left: 40px;
         padding-right: 0;
         height: 540px;
         padding-top: 82px;
         position: relative;
         width: 38%;
+        .blob {
+          float: right;
+        }
         .orange_blob {
           width: 49px;
           text-align: center;
