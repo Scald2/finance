@@ -2732,3 +2732,10 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     padding: 0 0 20px 0 !important;
   }
 }
+@media all and (max-width: 1299px) {
+  .container-fluid.main .row.first_top .right-floated {
+    text-align: left;
+    padding-right: 0;
+    padding-left: 40px;
+  }
+}
