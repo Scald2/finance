@@ -2137,7 +2137,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .desktop_hidden {
   display: none !important;
 }
-@media all and (max-width: 960px) {
+@media all and (max-width: 1200px) {
   .mobile_menu {
     position: fixed;
     top: 0;

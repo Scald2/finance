@@ -36,18 +36,6 @@ $(document).ready(function(){
         }
         return false;
     });
-    //parallax width
-    $window = $(window);
-    //if($('#wide_parallax').length) {
-    //    $window.scroll(function(){
-    //        if($window.scrollTop() + $window.height() >= $('#wide_parallax').offset().top) {
-    //            $('#main_parallax').addClass('wide');
-    //        }
-    //        else {
-    //            $('#main_parallax').removeClass('wide');
-    //        }
-    //    });
-    //}
     //carousel waiting
     if($('#Rectangle').length) {
         setInterval(function(){
