@@ -1583,6 +1583,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.first_bottom .video {
   height: 506px;
   padding: 0;
+  width: 38%;
 }
 .container-fluid.main .row.first_bottom .video .play {
   padding: 40px 0 0 46px;
@@ -1615,6 +1616,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.first_bottom .slider {
   height: 506px;
   padding: 0;
+  width: 62%;
 }
 .container-fluid.main .row.first_bottom .slider #svg_line {
   position: absolute;
