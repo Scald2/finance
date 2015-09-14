@@ -1496,7 +1496,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   height: 540px;
   padding-top: 82px;
   position: relative;
-  width: 38%;
+  width: 44%;
   text-align: right;
   padding-right: 40px;
 }
@@ -1548,7 +1548,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.first_top .left-floated {
   padding: 0;
   height: 540px;
-  width: 62%;
+  width: 56%;
 }
 .container-fluid.main .row.first_top .left-floated .item {
   height: 540px;
