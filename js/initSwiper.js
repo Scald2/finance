@@ -5,7 +5,7 @@
     }
 
     function initSwiper(selector) {
-        var defaultSlidesPerView = 1,
+        var defaultSlidesPerView = 2,
             instance;
 
         function initOrUpdate(slidesPerView) {
@@ -38,10 +38,10 @@
         function getSlidesPerView() {
             if (window.matchMedia("all and (max-width: 960px)").matches || window.matchMedia("all and (max-width: 500px)").matches) {
                 if (window.matchMedia("all and (max-width: 590px)").matches) {
-                    return 1;
+                    return 2;
                 }
                 else {
-                    return 2;
+                    return 3;
                 }
             }
 

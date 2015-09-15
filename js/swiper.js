@@ -576,6 +576,7 @@
             var slidesPerColumn = s.params.slidesPerColumn;
             var slidesPerRow = slidesNumberEvenToRows / slidesPerColumn;
             var numFullColumns = slidesPerRow - (s.params.slidesPerColumn * slidesPerRow - s.slides.length);
+
             for (i = 0; i < s.slides.length; i++) {
                 slideSize = 0;
                 var slide = s.slides.eq(i);
@@ -623,10 +624,6 @@
                     slideSize = (s.size - (s.params.slidesPerView - 1) * spaceBetween) / (s.params.slidesPerView );
                     if (s.params.roundLengths) slideSize = round(slideSize);
 
-                    if (s.params.prevNextPreview) {
-                        slideSize -= (slideSize / (s.params.slidesPerView + 1));
-                    }
-
                     if (isH()) {
                         s.slides[i].style.width = slideSize + 'px';
                     }
@@ -643,11 +640,16 @@
                     if (Math.abs(slidePosition) < 1 / 1000) slidePosition = 0;
                     if ((index) % s.params.slidesPerGroup === 0) s.snapGrid.push(slidePosition);
 
-                    if (s.params.prevNextPreview && s.params.slidesPerView > 1) {
-                        slidePosition += slideSize / 2;
+                    if (s.params.prevNextPreview && s.params.slidesPerView > 2) {
+                        s.slides[i].style.right = (slideSize / 2) + 'px';
+                        if (i !== (s.slides.length - s.params.slidesPerView + 1 )) {
+                            s.slidesGrid.push(slidePosition);
+                        }
                     }
-
-                    s.slidesGrid.push(slidePosition);
+                    else {
+                        s.slides[i].style.right = "0";
+                        s.slidesGrid.push(slidePosition);
+                    }
                 }
                 else {
                     if ((index) % s.params.slidesPerGroup === 0) s.snapGrid.push(slidePosition);
@@ -660,6 +662,7 @@
                 prevSlideSize = slideSize;
 
                 index++;
+
             }
             s.virtualSize = Math.max(s.virtualSize, s.size) + s.params.slidesOffsetAfter;
 
