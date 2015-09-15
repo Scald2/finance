@@ -1559,7 +1559,7 @@ body.RTL {
         padding-top: 82px;
         position: relative;
         width: 44%;
-        text-align: center;
+        text-align: left;
         padding-left: 40px;
         .blob {
           display: inline-block;
@@ -1924,6 +1924,10 @@ body.RTL {
           text-align: center;
           background: #FFFFFF;
           margin: 45px 5px 0 5px;
+          width: 165px;
+            &:first-of-type {
+              margin: 45px 5px 0 0;
+            }
           &.desktop_hidden {
             display: none;
           }
@@ -2070,6 +2074,7 @@ body.RTL {
           }
           img {
             float: left;
+            width: 67px;
           }
         }
       }
@@ -2583,14 +2588,29 @@ body {
           }
         }
         &.first_top {
-          padding-top: 93px;
+          padding-top: 64px;
+          .container {
+            top: 64px;
+            .right-floated {
+              width: 100%;
+              .blob {
+                float: none;
+                display: block;
+              }
+              padding: 20px 30px 20px 30px;
+            }
+            .left-floated {
+              width: 100%;
+            }
+          }
           .right-floated {
             float: none ;
             padding: 0 30px 20px 30px;
-            height: inherit;
+            height: 372px;
             .flat, .fill {
               max-width: inherit;
             }
+            width: 100%;
           }
           .orange_blob {
             display: none;
@@ -2598,6 +2618,7 @@ body {
           .left-floated {
             float: none;
             height: inherit;
+            width: 100%;
             .item {
               height: 370px;
               img {
@@ -2873,14 +2894,12 @@ body {
     padding: 0 0 20px 0 !important;
   }
 }
-@media all and (max-width: 1299px){
+@media all and(min-width: 992px) and  (max-width: 1850px){
   .container-fluid.main {
     .row {
       &.first_top {
-        .right-floated {
-          text-align: left;
-          padding-right: 0;
-          padding-left: 40px;
+        .left-floated {
+          width: 54%;
         }
       }
     }

@@ -1503,7 +1503,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   padding-top: 82px;
   position: relative;
   width: 44%;
-  text-align: center;
+  text-align: left;
   padding-left: 40px;
 }
 .container-fluid.main .row.first_top .right-floated .blob {
@@ -1831,6 +1831,10 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   text-align: center;
   background: #FFFFFF;
   margin: 45px 5px 0 5px;
+  width: 165px;
+}
+.container-fluid.main .row.tablet .text .flat:first-of-type {
+  margin: 45px 5px 0 0;
 }
 .container-fluid.main .row.tablet .text .flat.desktop_hidden {
   display: none;
@@ -1974,6 +1978,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 }
 .container-fluid.main .row.awards .col-xs-3 .blob img {
   float: left;
+  width: 67px;
 }
 .container-fluid.main .row.news {
   padding-top: 60px;
@@ -2467,12 +2472,27 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     font-size: 10px;
   }
   .container-fluid.main .row.first_top {
-    padding-top: 93px;
+    padding-top: 64px;
+  }
+  .container-fluid.main .row.first_top .container {
+    top: 64px;
+  }
+  .container-fluid.main .row.first_top .container .right-floated {
+    width: 100%;
+    padding: 20px 30px 20px 30px;
+  }
+  .container-fluid.main .row.first_top .container .right-floated .blob {
+    float: none;
+    display: block;
+  }
+  .container-fluid.main .row.first_top .container .left-floated {
+    width: 100%;
   }
   .container-fluid.main .row.first_top .right-floated {
     float: none ;
     padding: 0 30px 20px 30px;
-    height: inherit;
+    height: 372px;
+    width: 100%;
   }
   .container-fluid.main .row.first_top .right-floated .flat,
   .container-fluid.main .row.first_top .right-floated .fill {
@@ -2484,6 +2504,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   .container-fluid.main .row.first_top .left-floated {
     float: none;
     height: inherit;
+    width: 100%;
   }
   .container-fluid.main .row.first_top .left-floated .item {
     height: 370px;
@@ -2738,10 +2759,8 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     padding: 0 0 20px 0 !important;
   }
 }
-@media all and (max-width: 1299px) {
-  .container-fluid.main .row.first_top .right-floated {
-    text-align: left;
-    padding-right: 0;
-    padding-left: 40px;
+@media all and (min-width: 992px) and (max-width: 1850px) {
+  .container-fluid.main .row.first_top .left-floated {
+    width: 54%;
   }
 }
