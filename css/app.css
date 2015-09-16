@@ -1879,12 +1879,18 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.advantages .col-xs-3 p {
   font-size: 15px;
 }
-.container-fluid.main .row.advantages .col-xs-3 p.bold {
-  font-weight: 900;
-}
 .container-fluid.main .row.advantages .col-xs-3 p.normal {
   font-weight: 300;
   color: #B4B4B4;
+}
+.container-fluid.main .row.advantages .col-xs-3 p.bold {
+  font-weight: 900;
+}
+.container-fluid.main .row.advantages .col-xs-3 a {
+  color: #3B3B3B;
+}
+.container-fluid.main .row.advantages .col-xs-3 a:hover p {
+  text-decoration: underline;
 }
 .container-fluid.main .row.tablet {
   background: #ffffff url(../images/tablet_back.png) repeat-x;

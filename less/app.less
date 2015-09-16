@@ -1970,12 +1970,20 @@ body.RTL {
         }
         p {
           font-size: 15px;
-          &.bold {
-            font-weight: 900;
-          }
           &.normal {
             font-weight: 300;
             color: #B4B4B4;
+          }
+          &.bold {
+            font-weight: 900;
+          }
+        }
+        a {
+          color: #3B3B3B;
+          &:hover {
+            p {
+              text-decoration: underline;
+            }
           }
         }
       }
