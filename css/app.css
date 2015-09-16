@@ -2834,10 +2834,10 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     width: 54%;
   }
   .container-fluid.main .row.first_bottom .slider {
-    width: 57%;
+    width: 67%;
   }
   .container-fluid.main .row.first_bottom .video {
-    width: 43%;
+    width: 37%;
   }
 }
 @media all and (min-width: 3001px) {
