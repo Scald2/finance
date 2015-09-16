@@ -1508,10 +1508,10 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   padding-left: 20px;
 }
 .container-fluid.main .row.first_top .container .right-floated {
-  width: 38%;
+  width: 35%;
 }
 .container-fluid.main .row.first_top .container .left-floated {
-  width: 62%;
+  width: 65%;
 }
 .container-fluid.main .row.first_top .right-floated {
   float: right;
@@ -1519,7 +1519,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   height: 540px;
   padding-top: 82px;
   position: relative;
-  width: 44%;
+  width: 34%;
   text-align: left;
   padding-left: 40px;
 }
