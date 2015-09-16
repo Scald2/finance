@@ -1235,6 +1235,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 }
 .main_parallax.wide {
   width: 100%;
+  max-width: 100%;
 }
 .container-fluid.main {
   font-family: "Museo Sans Curl", Arial;
@@ -1974,9 +1975,12 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   border-radius: 5px;
   padding: 15px 15px;
 }
+.container-fluid.main .row.awards .col-xs-3 .blob .blob_inner {
+  float: left;
+}
 .container-fluid.main .row.awards .col-xs-3 .blob p {
   display: inline-block;
-  padding-left: 33px;
+  margin: 0;
 }
 .container-fluid.main .row.awards .col-xs-3 .blob p.bold {
   font-weight: 900;
@@ -1995,7 +1999,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 }
 .container-fluid.main .row.awards .col-xs-3 .blob img {
   float: left;
-  width: 67px;
+  width: 63px;
+  display: block;
+  margin-right: 20px;
 }
 .container-fluid.main .row.news {
   padding-top: 60px;
@@ -2298,9 +2304,6 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     margin: 0 15px 20px 15px;
     text-align: center;
   }
-  .container-fluid.main .mobile_hidden {
-    display: none !important;
-  }
   .container-fluid.main .row.header {
     height: 64px;
     line-height: 64px;
@@ -2308,6 +2311,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 15px;
+  }
+  .container-fluid.main .row.header .mobile_hidden {
+    display: none !important;
   }
   .container-fluid.main .row.header .col-md-12 {
     padding: 0;
@@ -2803,6 +2809,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   .container-fluid.main .row.first_bottom .slider {
     width: 54%;
   }
+  .container-fluid.main .row.first_bottom .video {
+    width: 46%;
+  }
 }
 @media all and (min-width: 3001px) {
   .container-fluid.main .row.first_top {
@@ -2817,6 +2826,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     margin: 0 auto;
   }
   .container-fluid.main .row.first_bottom .slider {
-    width: 54%;
+    width: 52%;
+  }
+  .container-fluid.main .row.first_bottom .video {
+    width: 48%;
   }
 }

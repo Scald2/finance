@@ -61,11 +61,12 @@ $(document).ready(function(){
     $('.carousel').carousel('pause');
     var $window = $(window);
     $window.scroll(function(){
-       if($(this).scrollTop() >= $('#wide_parallax').offset().top + 20) {
+       if($(this).scrollTop() >= $('.row.advantages.top').offset().top + 20) {
            $('#main_parallax').addClass('wide')
        }
         else {
            $('#main_parallax').removeClass('wide')
        }
+        console.log('ss')
     });
 });
