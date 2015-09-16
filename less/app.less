@@ -1265,7 +1265,8 @@ body.RTL {
 //main paralax
 .main_parallax {
   position: fixed;
-  width: 1300px;
+  width: 100%;
+  max-width: 4000px;
   height: 100%;
   z-index: 10;
   background: url(../images/parallax_test.png) no-repeat;
@@ -2942,6 +2943,11 @@ body {
           width: 54%;
         }
       }
+     &.first_bottom {
+        .slider {
+          width: 54%;
+        }
+      }
     }
   }
 }
@@ -2954,6 +2960,13 @@ body {
         margin: 0 auto;
         .left-floated {
           width: 52%;
+        }
+      }
+      &.first_bottom {
+        max-width: 4000px;
+        margin: 0 auto;
+        .slider {
+          width: 54%;
         }
       }
     }

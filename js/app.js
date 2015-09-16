@@ -59,4 +59,13 @@ $(document).ready(function(){
     }
     //to destroy
     $('.carousel').carousel('pause');
+    var $window = $(window);
+    $window.scroll(function(){
+       if($(this).scrollTop() >= $('#wide_parallax').offset().top + 20) {
+           $('#main_parallax').addClass('wide')
+       }
+        else {
+           $('#main_parallax').removeClass('wide')
+       }
+    });
 });

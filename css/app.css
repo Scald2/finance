@@ -1222,7 +1222,8 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 }
 .main_parallax {
   position: fixed;
-  width: 1300px;
+  width: 100%;
+  max-width: 4000px;
   height: 100%;
   z-index: 10;
   background: url(../images/parallax_test.png) no-repeat;
@@ -2799,6 +2800,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   .container-fluid.main .row.first_top .left-floated {
     width: 54%;
   }
+  .container-fluid.main .row.first_bottom .slider {
+    width: 54%;
+  }
 }
 @media all and (min-width: 3001px) {
   .container-fluid.main .row.first_top {
@@ -2807,5 +2811,12 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   }
   .container-fluid.main .row.first_top .left-floated {
     width: 52%;
+  }
+  .container-fluid.main .row.first_bottom {
+    max-width: 4000px;
+    margin: 0 auto;
+  }
+  .container-fluid.main .row.first_bottom .slider {
+    width: 54%;
   }
 }
