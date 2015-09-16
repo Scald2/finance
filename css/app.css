@@ -2101,6 +2101,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   font-size: 15px;
   line-height: 25px;
 }
+.container-fluid.main .row.news .col-md-6.blob .blue:hover {
+  text-decoration: underline;
+}
 .container-fluid.main .row.news .col-md-6.form {
   padding-right: 0;
 }
