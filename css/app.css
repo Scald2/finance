@@ -1513,6 +1513,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.first_top .container .left-floated {
   width: 65%;
 }
+.container-fluid.main .row.first_top .container .left-floated .item:after {
+  display: none;
+}
 .container-fluid.main .row.first_top .right-floated {
   float: right;
   padding-right: 0;
@@ -1575,6 +1578,16 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 }
 .container-fluid.main .row.first_top .left-floated .item {
   height: 540px;
+}
+.container-fluid.main .row.first_top .left-floated .item:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: url(../images/mask.png);
 }
 .container-fluid.main .row.first_top .left-floated img {
   min-height: 540px;
