@@ -2800,8 +2800,8 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     width: 54%;
   }
 }
-@media all and (min-width: 3001px) and (max-width: 4000px) {
-  .container-fluid.main .row {
+@media all and (min-width: 3001px) {
+  .container-fluid.main .row.first_top {
     max-width: 4000px;
     margin: 0 auto;
   }
