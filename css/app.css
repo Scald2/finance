@@ -1444,6 +1444,16 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.header div.language .lang_current {
   position: relative;
 }
+.container-fluid.main .row.header div.language .lang_current:after {
+  content: '';
+  display: block;
+  width: 11px;
+  height: 7px;
+  position: absolute;
+  background: url(../images/lang_triangle.png) no-repeat;
+  right: 16px;
+  bottom: -3px;
+}
 .container-fluid.main .row.header div.language:hover {
   width: 100%;
   border: 1px solid #DEDEDE;
@@ -1491,6 +1501,10 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   right: 0;
   margin: 0 auto;
   z-index: 12;
+}
+.container-fluid.main .row.first_top .container .carousel-indicators {
+  text-align: left;
+  padding-left: 20px;
 }
 .container-fluid.main .row.first_top .container .right-floated {
   width: 38%;
@@ -1618,6 +1632,19 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.first_bottom .container .video .blob {
   display: inline-block;
   padding-left: 40px;
+}
+.container-fluid.main .row.first_bottom .container .carousel-caption {
+  width: 95%;
+}
+.container-fluid.main .row.first_bottom .container .carousel-caption p,
+.container-fluid.main .row.first_bottom .container .carousel-caption a {
+  position: relative;
+  z-index: 10;
+}
+.container-fluid.main .row.first_bottom .container .carousel-caption img {
+  position: absolute;
+  right: 0;
+  top: 20%;
 }
 .container-fluid.main .row.first_bottom .video {
   height: 506px;
@@ -1927,7 +1954,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   text-align: right;
 }
 .container-fluid.main .row.tool .col-md-7 {
-  padding: 137px 0 35px 100px;
+  padding: 137px 0 30px 100px;
 }
 .container-fluid.main .row.tool .col-md-7 h2 {
   color: #FFFFFF;
