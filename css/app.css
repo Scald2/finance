@@ -1643,7 +1643,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 }
 .container-fluid.main .row.first_bottom .container .carousel-caption img {
   position: absolute;
-  right: 0;
+  right: 20px;
   top: 20%;
 }
 .container-fluid.main .row.first_bottom .video {
@@ -2833,11 +2833,13 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   .container-fluid.main .row.first_top .left-floated {
     width: 54%;
   }
+}
+@media all and (min-width: 2000px) and (max-width: 3000px) {
   .container-fluid.main .row.first_bottom .slider {
-    width: 67%;
+    width: 59%;
   }
   .container-fluid.main .row.first_bottom .video {
-    width: 33%;
+    width: 41%;
   }
 }
 @media all and (min-width: 3001px) {
@@ -2853,9 +2855,15 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     margin: 0 auto;
   }
   .container-fluid.main .row.first_bottom .slider {
-    width: 52%;
+    width: 58%;
   }
   .container-fluid.main .row.first_bottom .video {
-    width: 48%;
+    width: 42%;
+  }
+  .container-fluid.main .row.first_bottom .container .slider {
+    width: 62%;
+  }
+  .container-fluid.main .row.first_bottom .container .video {
+    width: 32%;
   }
 }
