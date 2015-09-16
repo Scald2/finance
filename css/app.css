@@ -2837,7 +2837,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     width: 67%;
   }
   .container-fluid.main .row.first_bottom .video {
-    width: 37%;
+    width: 33%;
   }
 }
 @media all and (min-width: 3001px) {
