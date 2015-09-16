@@ -1600,11 +1600,27 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 }
 .container-fluid.main .row.first_bottom {
   background: none;
+  position: relative;
+}
+.container-fluid.main .row.first_bottom .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 12;
+}
+.container-fluid.main .row.first_bottom .container .slider .item {
+  background: none;
+}
+.container-fluid.main .row.first_bottom .container .video .blob {
+  display: inline-block;
+  padding-left: 40px;
 }
 .container-fluid.main .row.first_bottom .video {
   height: 506px;
   padding: 0;
-  width: 38%;
+  width: 32%;
 }
 .container-fluid.main .row.first_bottom .video .play {
   padding: 40px 0 0 46px;
@@ -1637,7 +1653,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.first_bottom .slider {
   height: 506px;
   padding: 0;
-  width: 62%;
+  width: 68%;
 }
 .container-fluid.main .row.first_bottom .slider #svg_line {
   position: absolute;
@@ -2003,9 +2019,12 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   color: #838383;
   margin: 0;
 }
-.container-fluid.main .row.news .col-md-6.blob p.blue {
+.container-fluid.main .row.news .col-md-6.blob .blue {
   font-weight: 900;
   color: #0099E6;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 25px;
 }
 .container-fluid.main .row.news .col-md-6.form {
   padding-right: 0;
@@ -2070,22 +2089,29 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   padding: 0 0 0 15px;
 }
 .container-fluid.main .row.social {
-  padding-bottom: 35px;
+  padding-bottom: 10px;
+}
+.container-fluid.main .row.social span {
+  margin-right: 7px;
 }
 .container-fluid.main .row.social p.bold {
   font-weight: 900;
   font-size: 25px;
   line-height: 55px;
+  margin: 0;
 }
 .container-fluid.main .row.social .mobile_hidden p {
   text-align: right;
+}
+.container-fluid.main .row.social .mobile_hidden span {
+  margin-right: 12px;
 }
 .container-fluid.main .row.social .social a {
   width: 34px;
   height: 34px;
   display: inline-block;
   background: url(../images/sprite_2.png) no-repeat;
-  margin: 0 3px;
+  margin: 0 5px;
   vertical-align: middle;
 }
 .container-fluid.main .row.social .social a.in {
@@ -2522,8 +2548,12 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     right: 20px;
     left: inherit;
   }
+  .container-fluid.main .row.first_bottom .container .slider {
+    padding-top: 183px;
+  }
   .container-fluid.main .row.first_bottom .video {
-    height: inherit;
+    width: 100%;
+    height: 220px;
   }
   .container-fluid.main .row.first_bottom .video h2 {
     text-align: left;
@@ -2535,6 +2565,12 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   }
   .container-fluid.main .row.first_bottom .video .play {
     padding: 20px 0 20px 40px;
+  }
+  .container-fluid.main .row.first_bottom .slider {
+    width: 100%;
+  }
+  .container-fluid.main .row.first_bottom .slider .carousel {
+    padding-bottom: 20px;
   }
   .container-fluid.main .row.first_bottom .slider .carousel-inner {
     padding-bottom: 20px;

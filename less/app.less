@@ -1658,10 +1658,30 @@ body.RTL {
     }
     &.first_bottom {
       background: none;
+      position: relative;
+      .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 12;
+        .slider {
+          .item {
+            background: none;
+          }
+        }
+        .video {
+          .blob {
+            display: inline-block;
+            padding-left: 40px;
+          }
+        }
+      }
       .video {
         height: 506px;
         padding: 0;
-        width: 38%;
+        width: 32%;
         .play {
           padding: 40px 0 0 46px;
           display: inline-block;
@@ -1694,7 +1714,7 @@ body.RTL {
       .slider {
         height: 506px;
         padding: 0;
-        width: 62%;
+        width: 68%;
         #svg_line {
           position: absolute;
           width: 100%;
@@ -2100,10 +2120,13 @@ body.RTL {
           line-height: 25px;
           color: #838383;
           margin: 0;
-          &.blue {
-            font-weight: 900;
-            color: #0099E6;
-          }
+        }
+        .blue {
+          font-weight: 900;
+          color: #0099E6;
+          text-decoration: none;
+          font-size: 15px;
+          line-height: 25px;
         }
       }
       .col-md-6.form {
@@ -2174,16 +2197,23 @@ body.RTL {
       }
     }
     &.social {
-      padding-bottom: 35px;
+      padding-bottom: 10px;
+      span {
+        margin-right: 7px;
+      }
       p.bold {
         font-weight: 900;
         font-size: 25px;
-        line-height: 55px
+        line-height: 55px;
+        margin: 0;
       }
       .mobile_hidden {
          p {
            text-align: right;
          }
+        span {
+          margin-right: 12px;
+        }
       }
       .social {
         a {
@@ -2191,7 +2221,7 @@ body.RTL {
           height: 34px;
           display: inline-block;
           background: url(../images/sprite_2.png) no-repeat;
-          margin: 0 3px;
+          margin: 0 5px;
           vertical-align: middle;
           &.in {
             background-position: 1px 1px;
@@ -2640,8 +2670,14 @@ body {
           }
         }
         &.first_bottom {
+          .container {
+            .slider {
+              padding-top: 183px;
+            }
+          }
           .video {
-            height: inherit;
+            width: 100%;
+            height: 220px;
             h2 {
               text-align: left;
               padding: 20px 0 0 40px !important;
@@ -2655,6 +2691,10 @@ body {
             }
           }
           .slider {
+            width: 100%;
+            .carousel {
+              padding-bottom: 20px;
+            }
             .carousel-inner {
               padding-bottom: 20px;
             }
