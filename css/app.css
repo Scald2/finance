@@ -2829,15 +2829,15 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     padding: 0 0 20px 0 !important;
   }
 }
-@media all and (min-width: 992px) and (max-width: 3000px) {
+@media all and (min-width: 1900px) and (max-width: 3000px) {
   .container-fluid.main .row.first_top .left-floated {
     width: 54%;
   }
   .container-fluid.main .row.first_bottom .slider {
-    width: 54%;
+    width: 57%;
   }
   .container-fluid.main .row.first_bottom .video {
-    width: 46%;
+    width: 43%;
   }
 }
 @media all and (min-width: 3001px) {
