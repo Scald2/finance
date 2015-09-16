@@ -58,7 +58,6 @@ $(document).ready(function(){
         });
     }
     //to destroy
-    $('.carousel').carousel('pause');
     var $window = $(window);
     $window.scroll(function(){
        if($(this).scrollTop() >= $('.row.advantages.top').offset().top + 20) {
@@ -67,6 +66,28 @@ $(document).ready(function(){
         else {
            $('#main_parallax').removeClass('wide')
        }
-        console.log('ss')
+    });
+    //data-alert
+    $('.normal-input').keyup(function(){
+       if($(this).hasClass('alert')) {
+           var $parent = $(this).parent();
+           var $alert = $(this).data('alert');
+           $('<div class="alertText">' + $alert + "</div>").prependTo($parent);
+           console.log($alert);
+       }
+    });
+    //ontop click
+    $('#ontop').click(function(){
+       $('body').animate({scrollTop: 0}, 300);
+        return false
+    });
+    //initPhone
+    $("#phone").intlTelInput();
+    $(".country-list").mCustomScrollbar({
+        theme: 'dark',
+        autoDraggerLength: false,
+        advanced: {
+            updateOnContentResize: true
+        }
     });
 });

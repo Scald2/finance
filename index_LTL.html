@@ -7,7 +7,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/jquery.custom-scrollbar.css" rel="stylesheet">
     <link href="css/swiper.mobile.css" rel="stylesheet">
-
+    <link href="css/intlTelInput.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -614,14 +614,13 @@
                     </p>
                     <div class="col-md-6 col-xs-12">
                         <input class="normal-input success" placeholder="First name" />
-                        <input class="normal-input alert" placeholder="Last name" />
+                        <input class="normal-input" placeholder="Last name" data-alert="Здесь текст ошибки"/>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <input class="normal-input" placeholder="Mail"/>
                         <input class="normal-input" placeholder="Country"/>
                     </div>
-                    <input class="normal-input code" placeholder="423"/>
-                    <input class="normal-input phone" placeholder="Phone"/>
+                    <input class="normal-input phone" id="phone" placeholder="Phone"/>
                     <input type="submit" value="subscribe" class="flat orange"/>
                 </form>
             </div>
@@ -860,6 +859,7 @@
                     </li>
                 </ul>
                 <!--/ ul -->
+                <a href="#" class="ontop" id="ontop">On top</a>
             </div>
             <!-- / col-xs-12 top -->
             <div class="col-xs-12 mobile_hidden">
@@ -1001,9 +1001,9 @@
 <script src="js/jquery.mCustomScrollbar.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/swiper.js"></script>
+<script type="text/javascript" src="js/intlTelInput.min.js"></script>
 <script src="js/app.js"></script>
 <script src="js/initSwiper.js"></script>
-
 <script>
     window.Swiper.initNew('.advantages .container .blob');
 </script>
