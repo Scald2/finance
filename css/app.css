@@ -2841,6 +2841,12 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   .container-fluid.main .row.first_bottom .video {
     width: 41%;
   }
+  .container-fluid.main .row.first_bottom .container .video {
+    width: 38%;
+  }
+  .container-fluid.main .row.first_bottom .container .slider {
+    width: 62%;
+  }
 }
 @media all and (min-width: 3001px) {
   .container-fluid.main .row.first_top {
