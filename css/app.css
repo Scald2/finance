@@ -1301,7 +1301,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   display: inline-block;
 }
 .container-fluid.main .row.header .center {
-  text-align: center;
+  text-align: right;
   position: static;
   padding: 0 0 20px 15px;
 }
@@ -1398,6 +1398,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 }
 .container-fluid.main .row.header .center a.orange {
   float: right;
+  margin-left: 30px;
 }
 .container-fluid.main .row.header .center a.orange span {
   color: #FF8E00;
