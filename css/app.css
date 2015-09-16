@@ -2164,6 +2164,8 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   z-index: 12;
   border-radius: 5px;
   box-shadow: 0 3px 13px rgba(0, 0, 0, 0.2);
+  width: 395px;
+  margin: 5px 0;
 }
 .container-fluid.main .row.news .col-md-6.form form .country-list li {
   line-height: 31px;
