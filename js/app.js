@@ -83,6 +83,9 @@ $(document).ready(function(){
     });
     //initPhone
     $("#phone").intlTelInput();
+    //country select
+    $('#country').select2();
+    //custom scroll bar
     $(".country-list").mCustomScrollbar({
         theme: 'dark',
         autoDraggerLength: false,
@@ -90,6 +93,4 @@ $(document).ready(function(){
             updateOnContentResize: true
         }
     });
-    //country select
-    $('#country').select2();
 });
