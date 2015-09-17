@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="211px" height="215px" viewBox="0 0 211 215" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>Imported Layers + Path Copy + Path Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Main-full-menu+hovers" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Imported-Layers-+-Path-Copy-+-Path-Copy-2" sketch:type="MSLayerGroup" transform="translate(0.000000, 0.818057)">
+            <path d="M28.5152437,45.9699394 C45.4422556,29.0041344 67.0518929,19.5973466 89.1744403,17.7368462 L89.1744403,113.847848 L24.016289,179.155328 C-9.43864185,140.819717 -7.94338664,82.5121252 28.5152437,45.9699394 Z" id="Imported-Layers" fill="#0099E6" sketch:type="MSShapeGroup"></path>
+            <path d="M211,111.155064 L100.1396,111.155064 L100.1396,0.162507416 C127.910021,2.02839345 155.153366,13.5938513 176.38003,34.8691627 C197.573966,56.1116706 209.111025,83.365553 211,111.155064 L211,111.155064 Z" id="Path-Copy" fill="#FF8E00" sketch:type="MSShapeGroup"></path>
+            <path d="M95.3778403,124.002308 L194.257636,124.002308 C192.357426,146.098688 182.978497,167.6707 166.107173,184.580201 C129.177154,221.594856 69.9648522,222.657299 31.7515806,187.774386 L95.3778403,124.002308 L95.3778403,124.002308 Z" id="Path-Copy-2" fill="#0099E6" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

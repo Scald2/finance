@@ -93,4 +93,21 @@ $(document).ready(function(){
             updateOnContentResize: true
         }
     });
+    //carousel sync
+    $('#carousel-top .carousel-indicators').click(function (e) {
+        var $elem = e.target;
+       var $slideTo = $($elem).data('slideTo');
+       $('#carousel-top2').carousel($slideTo);
+    });
+    $('#carousel-bottom .carousel-indicators').click(function (e) {
+        if (e.target.nodeName == 'LI') {
+            $('.blue-line').addClass('active');
+        };
+        var $elem = e.target;
+        var $slideTo = $($elem).data('slideTo');
+        $('#carousel-bottom2').carousel($slideTo);
+    });
+    $('#carousel-bottom2').on('slid.bs.carousel', function(){
+        $('.blue-line').removeClass('active');
+    });
 });
