@@ -2345,6 +2345,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   font-weight: 300;
   color: #838383;
 }
+.container-fluid.main .row.link_footer ul a:hover {
+  text-decoration: underline;
+}
 .container-fluid.main .row.link_footer a {
   color: #fff;
 }
