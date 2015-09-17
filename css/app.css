@@ -1456,7 +1456,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   float: right;
   margin: 33px 0 0 30px;
   position: relative;
-  padding-right: 52px;
+  padding-right: 60px;
 }
 .container-fluid.main .row.header p {
   line-height: 1em;
@@ -1543,9 +1543,6 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   text-align: left;
   padding-left: 20px;
 }
-.container-fluid.main .row.first_top .container .right-floated {
-  width: 35%;
-}
 .container-fluid.main .row.first_top .container .left-floated {
   width: 65%;
 }
@@ -1556,11 +1553,11 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   float: right;
   padding-right: 0;
   height: 540px;
-  padding-top: 82px;
+  padding-top: 68px;
   position: relative;
-  width: 34%;
   text-align: left;
   padding-left: 40px;
+  width: 35%;
 }
 .container-fluid.main .row.first_top .right-floated .blob {
   display: inline-block;
@@ -1583,7 +1580,8 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 }
 .container-fluid.main .row.first_top .right-floated h2 {
   color: #ffffff;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 .container-fluid.main .row.first_top .right-floated h2:after {
   width: 59px;
@@ -1635,16 +1633,18 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   min-width: 100%;
 }
 .container-fluid.main .row.first_top .left-floated .carousel-caption {
-  top: 82px;
+  top: 69px;
   padding-top: 0;
   text-align: left;
   padding-left: 20px;
   font-size: 18px;
+  left: 12%;
 }
 .container-fluid.main .row.first_top .left-floated .carousel-caption h2 {
-  margin: 0 0 35px 0;
+  margin: 0 0 18px 0;
   font-weight: 900;
   text-shadow: none;
+  padding-bottom: 14px;
 }
 .container-fluid.main .row.first_top .left-floated .carousel-caption h2:after {
   width: 59px;
@@ -1654,7 +1654,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   text-shadow: none;
 }
 .container-fluid.main .row.first_top .left-floated .carousel-caption .flat {
-  margin-top: 35px;
+  margin-top: 8px;
   min-width: 165px;
   text-align: center;
   padding: 0;
@@ -1665,6 +1665,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 }
 .container-fluid.main .row.first_top .left-floated .carousel-indicators {
   bottom: 30px;
+  margin: 0;
+  left: 12%;
+  padding-left: 27px;
 }
 .container-fluid.main .row.first_top .left-floated .carousel-indicators li {
   width: 15px;
