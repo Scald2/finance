@@ -90,11 +90,6 @@ $(document).ready(function(){
             updateOnContentResize: true
         }
     });
-    //carousel sync first Block
-    $('#carousel-bottom').on('slide.bs.carousel', function() {
-        //console.log($(this).data('slide'));
-    });
-    $('#carousel-bottom .carousel-indicators').click(function(){
-       $(this).data('slide');
-    });
+    //country select
+    $('#country').select2();
 });
