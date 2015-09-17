@@ -1336,7 +1336,7 @@ body.RTL {
     padding-bottom: 25px;
     &:after {
       content: '';
-      width: 35px;
+      width: 59px;
       height: 2px;
       position: absolute;
       bottom: 0;
@@ -1624,10 +1624,14 @@ body.RTL {
         h2 {
           color: #ffffff;
           margin-bottom: 35px;
+          &:after {
+            width: 59px;
+          }
         }
         .description {
           font-weight: 300;
           color: #ffffff;
+          font-size: 18px;
         }
         .flat, .fill {
           display: block;
@@ -1639,6 +1643,7 @@ body.RTL {
           text-align: center;
           margin: 18px 0;
           text-shadow: none;
+          font-size: 16px;
         }
         .orange {
           background: #FF8E00;
@@ -1673,10 +1678,14 @@ body.RTL {
           padding-top: 0;
           text-align: left;
           padding-left: 20px;
+          font-size: 18px;
           h2 {
             margin: 0 0 35px 0;
             font-weight: 900;
             text-shadow: none;
+            &:after {
+              width: 59px;
+            }
           }
           p {
             font-weight: 300;
@@ -1690,12 +1699,15 @@ body.RTL {
             height: 50px;
             line-height: 50px;
             text-shadow: none;
+            font-size: 16px;
           }
         }
         .carousel-indicators {
+          bottom: 30px;
           li {
-            width: 14px;
-            height: 14px;
+            width: 15px;
+            height: 15px;
+            border: 2px solid #fff;
             &.active {
               width: 14px;
               height: 14px;
@@ -1748,7 +1760,7 @@ body.RTL {
         padding: 0;
         width: 32%;
         .play {
-          padding: 40px 0 0 46px;
+          padding: 40px 0 0 0;
           display: inline-block;
         }
         h2 {
@@ -1756,23 +1768,11 @@ body.RTL {
           color: #fff;
           text-align: center;
           padding: 0;
-          &:after {
-            display: none;
-          }
           span {
             display: inline-block;
             text-align: left;
             position: relative;
             padding-bottom: 35px;
-            &:after {
-              content: '';
-              width: 35px;
-              height: 2px;
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              background: #FFFFFF;
-            }
           }
         }
       }
@@ -1813,10 +1813,7 @@ body.RTL {
           line-height: 506px;
           padding-right: 40px;
         }
-        img {
-          //min-height: 506px;
-          //min-width: 100%;
-        }
+
         h2 {
           color: #333333;
           text-shadow: none;
@@ -1832,7 +1829,7 @@ body.RTL {
           text-shadow: none;
           display: inline-block;
           width: 370px;
-          font-size: 14px;
+          font-size: 15px;
         }
         .carousel-caption {
           top: 0;
