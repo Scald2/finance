@@ -1720,10 +1720,9 @@ body.RTL {
             border: 2px solid #fff;
             margin: 0 7px;
             &.active {
-              width: 14px;
-              height: 14px;
               border: 1px solid #0099E6;
               background-color: #0099E6;
+              margin: 1px 7px;
             }
             &:first-of-type {
               margin: 0 7px 0 0;
@@ -1765,6 +1764,10 @@ body.RTL {
             position: absolute;
             right: 20px;
             top: 20%;
+            &.annoying {
+              width: 274px;
+              right: 40px;
+            }
           }
         }
       }
@@ -2087,6 +2090,10 @@ body.RTL {
       .col-md-6 {
         padding-left: 30px;
         padding-right: 30px;
+        &.link {
+          padding-left: 0;
+          padding-right: 15px;
+        }
       }
       .col-md-6.link {
         a {
@@ -2109,6 +2116,7 @@ body.RTL {
         &.bold {
           font-weight: 900;
           font-size: 25px;
+          margin-top: 0;
         }
         &.normal {
           color: #838383;
@@ -2127,11 +2135,11 @@ body.RTL {
           text-decoration: underline;
         }
       }
-      .col-xs-5 {
-        text-align: right;
+      .image {
+        text-align: center;
       }
-      .col-md-7 {
-        padding: 137px 0 30px 100px;
+      .col-md-6.text {
+        padding: 137px 0 30px 15px;
         h2 {
           color: #FFFFFF;
           margin-bottom: 35px;
@@ -2230,6 +2238,9 @@ body.RTL {
         & > .col-md-6 {
           padding-left: 0;
           padding-right: 15px;
+          &.mobile_hidden {
+            padding-left: 15px;
+          }
         }
         p {
           font-size: 15px;
@@ -2447,6 +2458,9 @@ body.RTL {
         }
         &.drop-ul {
           margin: 0 20px;
+          &:first-of-type {
+            margin: 0 20px 0 0;
+          }
         }
         a {
           margin: 0;
@@ -2469,11 +2483,12 @@ body.RTL {
             line-height: 46px;
             height: 46px;
             width: 106px;
-            background: rgba(198,198,198,0.5) url(../images/ontop_back.svg) no-repeat;
+            background: rgba(198,198,198,0.2) url(../images/ontop_back.svg) no-repeat;
             background-position: 84px 50%;
             text-align: center;
             padding-right: 12px;
             border-radius: 5px;
+            float: right;
           }
         }
       }
@@ -2494,6 +2509,9 @@ body.RTL {
       }
     }
   }
+}
+.select2-results {
+  overflow: hidden;
 }
   .select2-drop {
     border-left: 1px solid #D1D1D1;

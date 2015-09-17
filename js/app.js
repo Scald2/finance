@@ -84,9 +84,20 @@ $(document).ready(function(){
     //initPhone
     $("#phone").intlTelInput();
     //country select
-    $('#country').select2();
+    var $country = $('#country');
+    $country.select2();
+    $('#s2id_country').click(function(){
+        $(".select2-results").mCustomScrollbar({
+        theme: 'dark',
+            autoDraggerLength: false,
+            advanced: {
+            updateOnContentResize: true,
+            autoUpdateTimeout: 60
+        }
+        });
+    });
     //custom scroll bar
-    $(".country-list").mCustomScrollbar({
+    $(".country-list, .select2-results").mCustomScrollbar({
         theme: 'dark',
         autoDraggerLength: false,
         advanced: {

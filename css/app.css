@@ -1673,10 +1673,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   margin: 0 7px;
 }
 .container-fluid.main .row.first_top .left-floated .carousel-indicators li.active {
-  width: 14px;
-  height: 14px;
   border: 1px solid #0099E6;
   background-color: #0099E6;
+  margin: 1px 7px;
 }
 .container-fluid.main .row.first_top .left-floated .carousel-indicators li:first-of-type {
   margin: 0 7px 0 0;
@@ -1718,6 +1717,10 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   position: absolute;
   right: 20px;
   top: 20%;
+}
+.container-fluid.main .row.first_bottom .container .carousel-caption img.annoying {
+  width: 274px;
+  right: 40px;
 }
 .container-fluid.main .row.first_bottom .video {
   height: 506px;
@@ -2004,6 +2007,10 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   padding-left: 30px;
   padding-right: 30px;
 }
+.container-fluid.main .row.why .col-md-6.link {
+  padding-left: 0;
+  padding-right: 15px;
+}
 .container-fluid.main .row.why .col-md-6.link a {
   display: inline-block;
   width: 100%;
@@ -2024,6 +2031,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.why p.bold {
   font-weight: 900;
   font-size: 25px;
+  margin-top: 0;
 }
 .container-fluid.main .row.why p.normal {
   color: #838383;
@@ -2041,33 +2049,33 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.tool a:hover {
   text-decoration: underline;
 }
-.container-fluid.main .row.tool .col-xs-5 {
-  text-align: right;
+.container-fluid.main .row.tool .image {
+  text-align: center;
 }
-.container-fluid.main .row.tool .col-md-7 {
-  padding: 137px 0 30px 100px;
+.container-fluid.main .row.tool .col-md-6.text {
+  padding: 137px 0 30px 15px;
 }
-.container-fluid.main .row.tool .col-md-7 h2 {
+.container-fluid.main .row.tool .col-md-6.text h2 {
   color: #FFFFFF;
   margin-bottom: 35px;
   font-size: 40px;
 }
-.container-fluid.main .row.tool .col-md-7 h2:after {
+.container-fluid.main .row.tool .col-md-6.text h2:after {
   background: #FFFFFF;
 }
-.container-fluid.main .row.tool .col-md-7 p {
+.container-fluid.main .row.tool .col-md-6.text p {
   color: #FFFFFF;
   font-weight: 500;
   font-size: 15px;
   margin-bottom: 20px;
 }
-.container-fluid.main .row.tool .col-md-7 p img {
+.container-fluid.main .row.tool .col-md-6.text p img {
   margin-right: 10px;
 }
-.container-fluid.main .row.tool .col-md-7 p img.annoying {
+.container-fluid.main .row.tool .col-md-6.text p img.annoying {
   margin-left: 5px;
 }
-.container-fluid.main .row.tool .col-md-7 .flat {
+.container-fluid.main .row.tool .col-md-6.text .flat {
   font-weight: 900;
   font-size: 20px;
   padding: 0 35px;
@@ -2139,6 +2147,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.news .col-md-6.blob > .col-md-6 {
   padding-left: 0;
   padding-right: 15px;
+}
+.container-fluid.main .row.news .col-md-6.blob > .col-md-6.mobile_hidden {
+  padding-left: 15px;
 }
 .container-fluid.main .row.news .col-md-6.blob p {
   font-size: 15px;
@@ -2340,6 +2351,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.link_footer ul.drop-ul {
   margin: 0 20px;
 }
+.container-fluid.main .row.link_footer ul.drop-ul:first-of-type {
+  margin: 0 20px 0 0;
+}
 .container-fluid.main .row.link_footer ul a {
   margin: 0;
   font-weight: 300;
@@ -2358,11 +2372,12 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   line-height: 46px;
   height: 46px;
   width: 106px;
-  background: rgba(198, 198, 198, 0.5) url(../images/ontop_back.svg) no-repeat;
+  background: rgba(198, 198, 198, 0.2) url(../images/ontop_back.svg) no-repeat;
   background-position: 84px 50%;
   text-align: center;
   padding-right: 12px;
   border-radius: 5px;
+  float: right;
 }
 .container-fluid.main .row.link_footer .col-xs-12.mobile_hidden {
   padding-top: 40px;
@@ -2378,6 +2393,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.link_footer .col-xs-12.mobile_hidden p.dark {
   color: #F2F2F2;
   font-size: 12px;
+}
+.select2-results {
+  overflow: hidden;
 }
 .select2-drop {
   border-left: 1px solid #D1D1D1;
