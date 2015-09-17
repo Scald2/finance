@@ -2035,6 +2035,12 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 .container-fluid.main .row.tool {
   background: url(../images/line_tablet.png) repeat-x;
 }
+.container-fluid.main .row.tool a {
+  color: #FFFFFF;
+}
+.container-fluid.main .row.tool a:hover {
+  text-decoration: underline;
+}
 .container-fluid.main .row.tool .col-xs-5 {
   text-align: right;
 }
@@ -2071,6 +2077,9 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
 }
 .container-fluid.main .row.awards {
   padding: 35px 0;
+}
+.container-fluid.main .row.awards a:hover p {
+  text-decoration: underline;
 }
 .container-fluid.main .row.awards h2 {
   text-align: center;
@@ -2138,14 +2147,14 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   color: #838383;
   margin: 0;
 }
-.container-fluid.main .row.news .col-md-6.blob .blue {
+.container-fluid.main .row.news .col-md-6.blob a.blue {
   font-weight: 900;
   color: #0099E6;
   text-decoration: none;
   font-size: 15px;
   line-height: 25px;
 }
-.container-fluid.main .row.news .col-md-6.blob .blue:hover {
+.container-fluid.main .row.news .col-md-6.blob a.blue:hover {
   text-decoration: underline;
 }
 .container-fluid.main .row.news .col-md-6.form {
