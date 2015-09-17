@@ -2349,10 +2349,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   font-weight: 900;
 }
 .container-fluid.main .row.link_footer ul.drop-ul {
-  margin: 0 20px;
-}
-.container-fluid.main .row.link_footer ul.drop-ul:first-of-type {
-  margin: 0 20px 0 0;
+  margin: 0 40px 0 0;
 }
 .container-fluid.main .row.link_footer ul a {
   margin: 0;
@@ -2554,6 +2551,7 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   }
   .container-fluid.main .row.header .col-md-12 {
     padding: 0;
+    text-align: center;
   }
   .container-fluid.main .row.header .col-md-12:after {
     content: '';
