@@ -2026,7 +2026,7 @@ body.RTL {
       background-position: top left;
       padding-top: 50px;
       .image {
-        padding: 0 30px 0 0;
+        padding: 0 30px 0 15px;
         text-align: right;
         img {
           max-width: 100%;
@@ -2050,7 +2050,8 @@ body.RTL {
           text-align: center;
           background: #FFFFFF;
           margin: 45px 5px 0 5px;
-          width: 165px;
+          max-width: 165px;
+          width: 30%;
             &:first-of-type {
               margin: 45px 5px 0 0;
             }
@@ -2569,7 +2570,7 @@ body {
     top: 0;
     right: 0;
     z-index: 18;
-    width: 70%;
+    width: 39%;
     height: 100%;
     display: none;
     &.active {
@@ -2707,6 +2708,18 @@ body {
       }
       &.first_top {
           padding-top: 64px;
+      }
+      &.awards {
+        .col-xs-3 {
+          .blob {
+            text-align: center;
+            img {
+              display: inline-block;
+              margin: 0;
+              float: none;
+            }
+          }
+        }
       }
     }
   }
@@ -3072,6 +3085,7 @@ body {
         }
         &.news {
           padding: 0;
+          overflow: hidden;
           .container {
             padding: 0;
           }
@@ -3105,6 +3119,14 @@ body {
             &.form {
               box-shadow: inset 0 4px 10px rgba(0,0,0,0.3);
               padding: 20px;
+              .select2-choice {
+                height: 42px;
+                line-height: 42px;
+              }
+              .intl-tel-input {
+                width: 100%;
+                margin-top: 25px;
+              }
               form {
                 padding: 0;
                 box-shadow: none;
@@ -3137,7 +3159,7 @@ body {
                 line-height: 42px;
               }
               .phone {
-                width: ~"calc(72% - 142px)";
+                width: 100%;
                 height: 42px;
                 line-height: 42px;
                 margin-right: 0;
