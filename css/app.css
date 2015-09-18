@@ -2791,7 +2791,8 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
     height: 370px;
   }
   .container-fluid.main .row.first_top .left-floated .item img {
-    min-height: 370px;
+    max-height: 370px;
+    max-width: none;
   }
   .container-fluid.main .row.first_top .left-floated .carousel-caption .flat {
     margin-top: 10px;
