@@ -1895,7 +1895,7 @@ body.RTL {
       }
     }
     &.advantages {
-      padding: 60px 0 0 0;
+      padding: 50px 0 0 0;
       .clearing {
         display: block;
         width: 100%;
@@ -2842,7 +2842,7 @@ body {
           padding: 0 15px;
           .col-md-12 {
             padding: 0;
-            text-align: center;
+            text-align: right;
             &:after {
               content: '';
               width: 100%;
@@ -2870,7 +2870,7 @@ body {
           }
           .blob {
             margin: 0;
-            padding: 15px 0 0 0;
+            padding: 15px 20px 0 0;
             float: none;
             display: inline-block;
             font-size: 10px;
@@ -2895,7 +2895,7 @@ body {
           .right-floated {
             float: none ;
             padding: 0 30px 20px 30px;
-            height: 372px;
+            height: 390px;
             .flat, .fill {
               max-width: inherit;
             }
@@ -2909,23 +2909,28 @@ body {
             height: inherit;
             width: 100%;
             .item {
-              height: 370px;
+              height: 378px;
               img {
                 max-height: 370px;
                 max-width: none;
               }
             }
             .carousel-caption {
+              top: 106px;
               .flat {
                 margin-top: 10px;
               }
             }
             .carousel-indicators {
-              top: 10px;
+              top: 30px;
               bottom: inherit;
               text-align: right;
               right: 20px;
               left: inherit;
+              li {
+                background: #D8D8D8;
+                border: 2px solid #D8D8D8;
+              }
             }
           }
         }
@@ -2956,6 +2961,7 @@ body {
                 margin: 0;
                 padding: 0 0 0;
                 width: 100%;
+                left: 0;
                 img {
                   top: 0;
                   max-width: 100%;
@@ -2965,6 +2971,11 @@ body {
                   max-height: 160px;
                   padding-bottom: 20px;
                 }
+              }
+              .carousel-indicators {
+                left: 0;
+                margin-left: 0;
+                width: 100%;
               }
             }
           }
@@ -3044,7 +3055,7 @@ body {
               margin: 10px 0 0 0;
               width: 170px;
               &.desktop_hidden {
-                display: inline-block;
+                display: inline-block !important;
               }
             }
             h2 {
