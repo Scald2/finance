@@ -3089,12 +3089,13 @@ body.RTL .row.common .col-xs-5 table td:nth-last-of-type(2) {
   .container-fluid.main .row.link_footer ul.drop-ul:last-of-type .big {
     border-bottom: 1px solid #F2F2F2;
   }
-}
-@media all and (max-width: 374px) {
   h2.bordered {
     font-size: 25px !important;
     margin: 0 0 20px !important;
     padding: 0 0 20px 0 !important;
+  }
+  .ontop {
+    display: none !important;
   }
 }
 @media all and (min-width: 1900px) and (max-width: 3000px) {
