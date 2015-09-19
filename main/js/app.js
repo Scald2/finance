@@ -7,23 +7,6 @@ $(document).ready(function(){
             $(this).toggleClass('active');
         return false
     });
-    //menu click
-    $('.nav-button').click(function(){
-       $('.body-blob').toggleClass('opened');
-        $("#scroll-shadowed").customScrollbar({
-            preventDefaultScroll: true,
-            fixedThumbHeight: 8,
-            swipeSpeed: 1
-        });
-    });
-    //scroll
-    $("#scroll-shadowed, #scroll-button").mCustomScrollbar({
-        theme: 'dark',
-        autoDraggerLength: false,
-        advanced: {
-            updateOnContentResize: true
-        }
-    });
     //click for menu
     var $dropMain = $('.hasDrop_main');
     $dropMain.click(function(e){
@@ -82,6 +65,8 @@ $(document).ready(function(){
         return false
     });
     //initPhone
+    if($('body').hasClass('RTL')) {
+    }
     $("#phone").intlTelInput();
     //country select
     var $country = $('#country');

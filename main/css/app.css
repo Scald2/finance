@@ -1160,7 +1160,7 @@ input.normal-input:disabled {
   max-width: 100%;
 }
 .container-fluid.main .row.tablet .text {
-  padding: 0 0 0 30px;
+  padding: 0 0 0 15px;
 }
 .container-fluid.main .row.tablet .text h2 {
   margin-bottom: 35px;
@@ -1646,6 +1646,140 @@ input.normal-input:disabled {
 }
 .desktop_hidden {
   display: none !important;
+}
+body.RTL .container-fluid.main h2.bordered:after {
+  left: auto;
+  right: 0;
+}
+body.RTL .container-fluid.main .row.header .col-md-12 {
+  text-align: left;
+  padding: 0 15px 20px 0;
+}
+body.RTL .container-fluid.main .row.header .col-md-12 .logo {
+  float: right;
+}
+body.RTL .container-fluid.main .row.header .col-md-12 .blob {
+  float: left;
+  margin: 33px 30px 0 0;
+  padding-right: 0;
+  padding-left: 60px;
+}
+body.RTL .container-fluid.main .row.header .col-md-12 .orange {
+  float: left;
+  margin-left: 0;
+  margin-right: 30px;
+}
+body.RTL .container-fluid.main .row.header .col-md-12 .language {
+  left: 1px;
+  right: auto;
+}
+body.RTL .container-fluid.main .row.header .col-md-12 .language .lang_current:after {
+  right: auto;
+  left: 15px;
+}
+body.RTL .container-fluid.main .row.header .col-md-12 .language a {
+  text-align: left;
+  padding-left: 4px;
+  padding-right: 0;
+}
+body.RTL .container-fluid.main .row.header .col-md-12 .language a span {
+  margin-left: 10px;
+  margin-right: 0;
+}
+body.RTL .container-fluid.main .row.first_top .left-floated .carousel-caption {
+  text-align: right;
+}
+body.RTL .container-fluid.main .row.first_top .right-floated h2 {
+  text-align: right;
+}
+body.RTL .container-fluid.main .row.first_bottom .slider .carousel-caption {
+  left: auto;
+  right: 5%;
+  text-align: right;
+}
+body.RTL .container-fluid.main .row.first_bottom .slider .carousel-caption img {
+  left: 20px;
+  right: auto;
+}
+body.RTL .container-fluid.main .row.advantages h2:after {
+  left: 0;
+  right: 0;
+}
+body.RTL .container-fluid.main .row.tablet .image {
+  float: right;
+  padding: 0 15px 0 30px;
+}
+body.RTL .container-fluid.main .row.tablet .text {
+  text-align: right;
+  padding: 0 15px;
+}
+body.RTL .container-fluid.main .row.why {
+  text-align: right;
+}
+body.RTL .container-fluid.main .row.why .container {
+  padding-left: 0;
+  padding-right: 35px;
+}
+body.RTL .container-fluid.main .row.why .mobile_hidden {
+  padding-left: 15px;
+  padding-right: 0;
+}
+body.RTL .container-fluid.main .row.why p.normal {
+  padding-left: 0;
+  padding-right: 30px;
+  background: url(../images/accept.svg) no-repeat 100% 5px;
+}
+body.RTL .container-fluid.main .row.why .added {
+  float: right;
+  padding-right: 0;
+  padding-left: 30px;
+}
+body.RTL .container-fluid.main .row.tool .mobile_hidden {
+  float: right;
+}
+body.RTL .container-fluid.main .row.tool .col-xs-12 {
+  padding: 137px 15px 15px 0;
+  text-align: right;
+}
+body.RTL .container-fluid.main .row.awards h2:after {
+  left: 0;
+  right: 0;
+}
+body.RTL .container-fluid.main .row.news .blob {
+  float: right;
+  padding-right: 0;
+  padding-left: 15px;
+  text-align: right;
+}
+body.RTL .container-fluid.main .row.news .form {
+  padding-right: 15px;
+  padding-left: 0;
+  text-align: right;
+}
+body.RTL .container-fluid.main .row.news .form .col-md-6:first-of-type {
+  padding-left: 0;
+  padding-right: 15px;
+}
+body.RTL .container-fluid.main .row.news .form .col-md-6:nth-of-type(2n) {
+  padding-left: 15px;
+  padding-right: 0;
+}
+body.RTL .container-fluid.main .row.news .form .intl-tel-input {
+  width: -moz-calc(100% - 146px);
+  width: -webkit-calc(100% - 146px);
+  width: calc(100% - 146px);
+}
+body.RTL .container-fluid.main .row.news .form input {
+  text-align: right;
+}
+body.RTL .container-fluid.main .row.news .form .flat {
+  text-align: center;
+}
+body.RTL .container-fluid.main .row.link_footer {
+  text-align: right;
+}
+body.RTL .container-fluid.main .row .ontop {
+  float: left !important;
 }
 @media all and (min-width: 961px) and (max-width: 1200px) {
   body {
@@ -2153,6 +2287,9 @@ input.normal-input:disabled {
     padding-top: 50px;
     padding-bottom: 40px;
   }
+  .container-fluid.main .row.why h2.bordered {
+    text-align: center;
+  }
   .container-fluid.main .row.why h2.bordered:after {
     left: 0;
     right: 0;
@@ -2212,8 +2349,8 @@ input.normal-input:disabled {
     padding: 20px;
   }
   .container-fluid.main .row.news div.col-xs-12.form .select2-choice {
-    height: 42px;
-    line-height: 42px;
+    height: 42px !important;
+    line-height: 42px !important;
   }
   .container-fluid.main .row.news div.col-xs-12.form .intl-tel-input {
     width: 100%;
@@ -2318,6 +2455,64 @@ input.normal-input:disabled {
   }
   .ontop {
     display: none !important;
+  }
+  body.RTL .container-fluid.main .row.header .logo {
+    float: right;
+  }
+  body.RTL .container-fluid.main .row.header .col-md-12 .menu_mobile {
+    float: left;
+    padding: 0 15px 0 0;
+    border-right: 1px solid #D1D1D1;
+    border-left: 0;
+  }
+  body.RTL .container-fluid.main .row.header .col-md-12 .blob {
+    margin: 0;
+    padding: 15px 0 0 20px;
+    float: none;
+    display: inline-block;
+    font-size: 10px;
+  }
+  body.RTL .container-fluid.main .row.first_top .right-floated .description {
+    text-align: right;
+  }
+  body.RTL .container-fluid.main .row.first_bottom {
+    text-align: right;
+  }
+  body.RTL .container-fluid.main .row.first_bottom .blob {
+    padding-right: 40px;
+    padding-left: 0;
+  }
+  body.RTL .container-fluid.main .row.first_bottom .slider .carousel-caption {
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
+  body.RTL .container-fluid.main .row.tablet .text {
+    padding: 20px;
+    text-align: center;
+  }
+  body.RTL .container-fluid.main .row.tool .text {
+    padding: 40px 35px 40px 20px;
+  }
+  body.RTL .container-fluid.main .row.news h2:after {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  body.RTL .container-fluid.main .row.link_footer ul.drop-ul {
+    background-position: 3% 14px;
+  }
+  body.RTL .container-fluid.main .row.link_footer ul.drop-ul.active {
+    background-position: 3% -38px;
+  }
+  body.RTL .mobile_menu {
+    text-align: right;
+  }
+  body.RTL .mobile_menu .menu_close + .blob ul .drop-ul {
+    background-position: 0 20px;
+  }
+  body.RTL .mobile_menu .menu_close + .blob ul .drop-ul.active {
+    background-position: 0 -29px;
   }
 }
 @media all and (min-width: 1900px) and (max-width: 3000px) {
