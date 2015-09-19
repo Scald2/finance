@@ -66,6 +66,7 @@ $(document).ready(function(){
     });
     //initPhone
     if($('body').hasClass('RTL')) {
+
     }
     $("#phone").intlTelInput();
     //country select
