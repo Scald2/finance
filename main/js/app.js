@@ -1,5 +1,5 @@
 /**
- * Created by dmitry on 31.08.15.
+ * Created by petrov on 31.08.15.
  */
 $(document).ready(function(){
     //drop ul
@@ -86,18 +86,8 @@ $(document).ready(function(){
     //country select
     var $country = $('#country');
     $country.select2();
-    $('#s2id_country').click(function(){
-        $(".select2-results").mCustomScrollbar({
-        theme: 'dark',
-            autoDraggerLength: false,
-            advanced: {
-            updateOnContentResize: true,
-            autoUpdateTimeout: 60
-        }
-        });
-    });
     //custom scroll bar
-    $(".country-list, .select2-results").mCustomScrollbar({
+    $(".country-list").mCustomScrollbar({
         theme: 'dark',
         autoDraggerLength: false,
         advanced: {

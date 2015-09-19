@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="34px" viewBox="0 0 36 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Main-full-menu+hovers" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSArtboardGroup" transform="translate(-929.000000, -3034.000000)" id="Mask-+-Bitmap-Copy" fill="#FFFFFF">
+            <g sketch:type="MSLayerGroup" transform="translate(-512.500000, 2908.283732)">
+                <g id="Group" transform="translate(1442.000000, 125.000000)" sketch:type="MSShapeGroup">
+                    <path d="M26,34 C30.9705627,34 35,29.9705627 35,25 C35,20.0294373 30.9705627,16 26,16 C21.0294373,16 17,20.0294373 17,25 C17,29.9705627 21.0294373,34 26,34 Z M26,32 C29.8659932,32 33,28.8659932 33,25 C33,21.1340068 29.8659932,18 26,18 C22.1340068,18 19,21.1340068 19,25 C19,28.8659932 22.1340068,32 26,32 Z" id="Oval-147"></path>
+                    <rect id="Rectangle-866" x="25" y="19.6430262" width="2" height="6.07324219"></rect>
+                    <rect id="Rectangle-866-Copy" transform="translate(23.481689, 24.679647) rotate(-90.000000) translate(-23.481689, -24.679647) " x="22.4816895" y="22.1613367" width="2" height="5.03662109"></rect>
+                    <rect id="Rectangle-863" x="6" y="0.887655079" width="4" height="6.07324219" rx="5"></rect>
+                    <rect id="Rectangle-863-Copy" x="17" y="0.887655079" width="4" height="6.07324219" rx="5"></rect>
+                    <path d="M28,14.4697849 L28,8.99767164 C28,6.23924844 25.7588096,4 22.9941611,4 L22,4 L22,4 L22,5.00313032 C22,6.65825574 20.6534829,8 19,8 C17.3431458,8 16,6.65260907 16,5.00313032 L16,4 L11,4 L11,5.00313032 C11,6.65825574 9.65348288,8 8,8 C6.34314575,8 5,6.65260907 5,5.00313032 L5,4.0000031 L5,4.00000333 C2.24086414,4.00315432 0,6.23947918 0,8.99767164 L0,25.0023284 C0,27.7607516 2.2411904,30 5.00583887,30 L16.1707263,30 C15.574449,28.7770953 15.199669,27.4263569 15.0986017,26 L3,26 L3,10.7162684 L25.5,10.7162684 L25.5,14.2984353 C25.6657323,14.2909727 25.8324257,14.2872013 26,14.2872013 C26.6831169,14.2872013 27.3515957,14.3498746 28,14.4697849 Z" id="Rectangle-860"></path>
+                    <rect id="Rectangle-868" x="5" y="13" width="5" height="3"></rect>
+                    <rect id="Rectangle-868-Copy-4" x="5" y="17" width="5" height="3"></rect>
+                    <rect id="Rectangle-868-Copy-5" x="5" y="21" width="5" height="3"></rect>
+                    <rect id="Rectangle-868-Copy-6" x="12" y="21" width="5" height="3"></rect>
+                    <rect id="Rectangle-868-Copy" x="12" y="13" width="5" height="3"></rect>
+                    <rect id="Rectangle-868-Copy-3" x="12" y="17" width="5" height="3"></rect>
+                    <rect id="Rectangle-868-Copy-2" x="19" y="13" width="5" height="3"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
