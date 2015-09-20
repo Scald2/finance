@@ -1633,6 +1633,8 @@ input {
       }
       .col-xs-12 {
         &.top {
+          position: relative;
+          padding-right: 121px;
           .ontop {
             display: inline-block;
             font-weight: 900;
@@ -1645,7 +1647,9 @@ input {
             text-align: center;
             padding-right: 12px;
             border-radius: 5px;
-            float: right;
+            position: absolute;
+            right: 15px;
+            top: 0;
           }
         }
       }
@@ -1772,6 +1776,7 @@ body.RTL {
       &.first_bottom {
         .video {
           .blob {
+
           }
         }
         .slider {
@@ -1832,6 +1837,14 @@ body.RTL {
         .col-xs-12 {
           padding: 137px 15px 15px 0;
           text-align: right;
+          img {
+            margin-right: 0;
+            margin-left: 10px;
+            &.annoying {
+              margin-right: 5px;
+              margin-left: 10px;
+            }
+          }
         }
       }
       &.awards {
@@ -1878,9 +1891,17 @@ body.RTL {
       }
       &.link_footer {
         text-align: right;
+        .col-xs-12 {
+          &.top {
+            padding-right: 15px;
+            padding-left: 121px;
+          }
+        }
       }
       .ontop {
         float: left !important;
+        left: 15px;
+        right: auto;
       }
     }
   }
@@ -2039,6 +2060,16 @@ body {
       &.first_top {
           padding-top: 64px;
       }
+      &.first_bottom {
+        .carousel-caption {
+          img {
+            max-width: 50%;
+          }
+          .description {
+            max-width: 50%;
+          }
+        }
+      }
       &.awards {
         .col-xs-3 {
           .blob {
@@ -2049,6 +2080,39 @@ body {
               float: none;
             }
           }
+        }
+      }
+    }
+  }
+  body.RTL {
+    .container-fluid.main {
+      .row {
+        &.header {
+          .menu_mobile {
+            float: left;
+            padding: 0 15px 0 0;
+            border-right: 1px solid #D1D1D1;
+            border-left: 0;
+          }
+          .col-md-12 {
+            text-align: center;
+            .blob {
+              margin: 0;
+              padding: 15px 0 0 20px;
+              float: none;
+              display: inline-block;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+    .mobile_menu {
+      text-align: right;
+      .menu_close + .blob ul .drop-ul {
+        background-position: 0 20px;
+        &.active {
+          background-position: 0 -29px;
         }
       }
     }
