@@ -1955,6 +1955,9 @@ body.RTL .container-fluid.main .row .ontop {
   .container-fluid.main .row.first_top {
     padding-top: 64px;
   }
+  .container-fluid.main .row.first_top .container {
+    top: 64px;
+  }
   .container-fluid.main .row.first_bottom .carousel-caption img {
     max-width: 50%;
   }
